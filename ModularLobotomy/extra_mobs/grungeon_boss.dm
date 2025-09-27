@@ -21,7 +21,6 @@
 	butcher_results = list(/obj/item/food/meat/slab/robot = 22)
 	guaranteed_butcher_results = list(/obj/item/food/meat/slab/robot = 16)
 	death_sound = 'sound/effects/ordeals/green/midnight_dead.ogg'
-	offsets_pixel_x = list("south" = -96, "north" = -96, "west" = -96, "east" = -96)
 	damage_effect_scale = 1.25
 	rapid = 50
 	rapid_fire_delay = 0.4
@@ -29,6 +28,12 @@
 	casingtype = /obj/item/ammo_casing/caseless/soda_mini
 	var/datum/beam/current_beam = null
 	var/can_act = TRUE
+
+/mob/living/simple_animal/hostile/ordeal/grungeon_boss/Initialize()
+	. = ..()
+	var/matrix/shift = matrix(transform)
+	shift.Translate(-96, 0)
+	transform = shift
 
 /mob/living/simple_animal/hostile/ordeal/grungeon_boss/Move()
 	return FALSE
