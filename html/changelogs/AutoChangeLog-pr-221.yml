@@ -1,0 +1,5 @@
+author: "Destrok171"
+delete-after: True
+changes:
+  - bugfix: "Tremor now correctly sets and updates slowdown based on stacks"
+  - balance: "Tremor slowdown per stack 0.4 -> 0.1 (it's weaker)"
