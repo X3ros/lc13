@@ -1,5 +1,0 @@
-author: "Destrok171"
-delete-after: True
-changes:
-  - code_imp: "Updated COMSIG_MOB_APPLY_DAMGE to include more info"
-  - balance: "You can no longer self-trigger Mouth of God's counter"

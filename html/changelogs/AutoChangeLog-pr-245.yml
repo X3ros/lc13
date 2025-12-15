@@ -1,5 +1,0 @@
-author: "EnderMage99"
-delete-after: True
-changes:
-  - bugfix: "Fixed Middle weapons from dealing insane damage."
-  - rscdel: "Removed middle cape from lootcrates"
