@@ -109,7 +109,7 @@
 /**
  * Some kind of debug verb that gives atmosphere environment details
  */
-/mob/proc/Cell()
+/* /mob/proc/Cell()
 	set category = "Admin"
 	set hidden = TRUE
 
@@ -125,7 +125,7 @@
 		if(gas[MOLES])
 			t+="<span class='notice'>[gas[GAS_META][META_GAS_NAME]]: [gas[MOLES]] </span>\n"
 
-	to_chat(usr, t)
+	to_chat(usr, t) */
 
 /**
  * Return the desc of this mob for a photo
@@ -300,7 +300,7 @@
 	var/obj/item/W = get_active_held_item()
 
 	if(istype(W))
-		if(equip_to_slot_if_possible(W, slot,0,0,0))
+		if(equip_to_slot_if_possible(W, slot, FALSE, FALSE, FALSE))
 			return TRUE
 
 	if(!W)
@@ -331,7 +331,7 @@
 		if(qdel_on_fail)
 			qdel(W)
 		else if(!disable_warning)
-			to_chat(src, "<span class='warning'>You are unable to equip that!</span>")
+			to_chat(src, span_warning("You are unable to equip that!"))
 		return FALSE
 	equip_to_slot(W, slot, initial, redraw_mob) //This proc should not ever fail.
 	return TRUE

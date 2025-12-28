@@ -23,7 +23,7 @@
 	var/justicemod = 1 + userjust / 100
 	var/damage_dealt = force * justicemod * force_multiplier
 	var/list/been_hit = QDELETED(target) ? list() : list(target)
-	user.HurtInTurf(T, been_hit, damage_dealt, RED_DAMAGE, hurt_mechs = TRUE, hurt_structure = TRUE)
+	user.HurtInTurf(T, been_hit, damage_dealt, RED_DAMAGE, hurt_mechs = TRUE, hurt_structure = TRUE, attack_type = (ATTACK_TYPE_MELEE))
 
 /obj/item/ego_weapon/grinder/get_clamped_volume()
 	return 40
@@ -61,6 +61,7 @@
 		return
 	if(!can_spin)
 		to_chat(user,span_warning("You attacked too recently."))
+		balloon_alert(user, "You attacked too recently.")
 		return
 	if(do_after(user, 12, src))
 		can_spin = TRUE
@@ -77,7 +78,7 @@
 			aoe*=justicemod
 			if(L == user || ishuman(L))
 				continue
-			L.apply_damage(aoe, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+			L.deal_damage(aoe, BLACK_DAMAGE, user, attack_type = (ATTACK_TYPE_SPECIAL))
 
 
 /obj/item/ego_weapon/fury
@@ -110,6 +111,7 @@
 	if(target.stat == DEAD && living)
 		if(!rage)
 			to_chat(user, span_userdanger("LONG LIVE THE QUEEN!"))
+			balloon_alert(user, "LONG LIVE THE QUEEN!")
 			rage = FALSE
 		force *= 3
 		rage = TRUE
@@ -148,7 +150,7 @@
 		aoe*=justicemod
 		if(L == user || ishuman(L))
 			continue
-		L.apply_damage(aoe, RED_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+		L.deal_damage(aoe, RED_DAMAGE, user, attack_type = (ATTACK_TYPE_MELEE), blocked = L.run_armor_check(null, BLACK_DAMAGE))
 
 
 
@@ -238,8 +240,10 @@
 	if(damagetype == PALE_DAMAGE && can_hype)
 		if(naked_parry || realized_parry) // You get 100% pale resist on empowered parry, it deserves it's own message.
 			to_chat(source, span_nicegreen("Stand your ground in the face of death. Struggle against the inevitable with reckless abandon, for you shall have me by your side."))
+			balloon_alert(source, "Stand your ground in the face of death. Struggle against the inevitable with reckless abandon, for you shall have me by your side.")
 		else // On the other hand, non-empowered parry has 0% pale resist, tell the user that they are being dumb.
-			to_chat(source, span_warning("To attempt parry the aspect of death is to hide from inevitability. To hide is to fear. Show me that you do not fear death."))
+			to_chat(source, span_warning("To attempt to parry the aspect of death is to hide from inevitability. To hide is to fear. Show me that you do not fear death."))
+			balloon_alert(source, "To attempt to parry the aspect of death is to hide from inevitability. To hide is to fear. Show me that you do not fear death.")
 		can_hype = FALSE // It's over.
 		addtimer(CALLBACK(src, PROC_REF(hype_returns)), 120) // Less intrusive than the big Colossus font, still on cooldown due to being quite the long message.
 	else if(naked_parry)
@@ -251,6 +255,7 @@
 		..()
 		if(can_hype)
 			to_chat(source, span_colossus("A GOD DOES NOT FEAR DEATH!")) // The font is LARGE, that's why it is on a cooldown.
+			balloon_alert(source, "A GOD DOES NOT FEAR DEATH!")
 			can_hype = FALSE // It's SO over.
 			addtimer(CALLBACK(src, PROC_REF(hype_returns)), 180) // But we WILL be back (after 18 seconds).
 		return
@@ -300,6 +305,7 @@
 			ramping = 1.5
 			if(!smashing)
 				to_chat(user, MESSAGE_TYPE_WARNING, "You smash the axe down repeatedly!")
+				balloon_alert(user, "You smash the axe down repeatedly!")
 				Smash(user, target)
 		else
 			ramping -= 0.2
@@ -389,7 +395,7 @@
 			new /obj/effect/temp_visual/smash_effect(T)
 			var/smash_damage = (i > 2 ? 40 : 10)*(1+(get_modified_attribute_level(user, JUSTICE_ATTRIBUTE)/100))
 			smash_damage*=force_multiplier
-			been_hit = user.HurtInTurf(T, been_hit, smash_damage, RED_DAMAGE)
+			been_hit = user.HurtInTurf(T, been_hit, smash_damage, RED_DAMAGE, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
 		if (i > 2)
 			playsound(get_turf(src), 'sound/abnormalities/woodsman/woodsman_strong.ogg', 75, 0, 5) // BAM
 		else
@@ -425,9 +431,11 @@
 			friend_count++
 	if(!friend_count && icon_state == "courage")
 		to_chat(user, "<span class='warning'>Your weapon cowers and shatters in your hand!")
+		balloon_alert(user, "Your weapon cowers and shatters in your hand!")
 		icon_state = "courage_broken"
 	else if(friend_count && icon_state == "courage_broken")
 		to_chat(user, "<span class='nicegreen'>Your weapon puffs back up to impress your allies!")
+		balloon_alert(user, "Your weapon puffs back up to impress your allies!")
 		icon_state = "courage"
 	user.update_inv_hands()
 	..()
@@ -466,10 +474,12 @@
 			friend_count++
 	if(!friend_count && icon_state == "bravery")
 		to_chat(user, "<span class='warning'>Your weapon cowers in your hand!")
+		balloon_alert(user, "Your weapon cowers in your hand!")
 		icon_state = "bravery_broken"
 		playsound(src, 'sound/abnormalities/scaredycat/catchange.ogg', 25, FALSE, 4)
 	else if(friend_count && icon_state == "bravery_broken")
 		to_chat(user, "<span class='nicegreen'>Your weapon puffs back up to impress your allies!")
+		balloon_alert(user, "Your weapon puffs back up to impress your allies!")
 		icon_state = "bravery"
 		playsound(src, 'sound/abnormalities/scaredycat/catgrunt.ogg', 50, FALSE, 4)
 	user.update_icon_state()
@@ -506,6 +516,7 @@
 		happy = TRUE
 		icon_state = "pleasure_active"
 		to_chat(H, span_notice("The thorns start secreting some strange substance."))
+		balloon_alert(H, "The thorns start secreting some strange substance.")
 		playsound(H, 'sound/abnormalities/porccubus/porccu_giggle.ogg', 50, FALSE, 4)
 		playsound(H, 'sound/weapons/bladeslice.ogg', 50, FALSE, 4)
 		addtimer(CALLBACK(src, PROC_REF(Withdrawal)), 20 SECONDS)
@@ -515,6 +526,7 @@
 /obj/item/ego_weapon/pleasure/proc/Withdrawal(mob/living/M, mob/living/user)
 	playsound(user, 'sound/abnormalities/porccubus/porccu_giggle.ogg', 50, FALSE, 4)
 	to_chat(user, span_notice("The [src] is returning back to normal."))
+	balloon_alert(user, "The [src] is returning back to normal.")
 	icon_state = "pleasure"
 	happy = FALSE
 	force = 30
@@ -523,9 +535,10 @@
 	name = "bare metal"
 	desc = "Looks to be a fan blade with a handle welded to it."
 	icon_state = "metal"
-	force = 40
+	force = 52
 	swingstyle = WEAPONSWING_LARGESWEEP
 	attack_speed = 1.5
+	stuntime = 7
 	damtype = RED_DAMAGE
 	attack_verb_continuous = list("slices", "cleaves", "chops")
 	attack_verb_simple = list("slice", "cleave", "chop")
@@ -686,10 +699,12 @@
 	..()
 	if(combo_on)
 		to_chat(user,span_warning("You change your stance, and will no longer perform a finisher."))
+		balloon_alert(user, "You change your stance, and will no longer perform a finisher.")
 		combo_on = FALSE
 		return
 	if(!combo_on)
 		to_chat(user,span_warning("You change your stance, and will now perform a finisher."))
+		balloon_alert(user, "You change your stance, and will now perform a finisher.")
 		combo_on =TRUE
 		return
 
@@ -708,6 +723,7 @@
 			combo = -4
 			playsound(src, 'sound/weapons/fwoosh.ogg', 300, FALSE, 9)
 			to_chat(user,span_warning("You take a moment to reset your stance."))
+			balloon_alert(user, "You take a moment to reset your stance.")
 		else
 			user.changeNext_move(CLICK_CD_MELEE * 0.3)
 	..()
@@ -754,8 +770,10 @@
 /obj/item/ego_weapon/shield/legerdemain/AnnounceBlock(mob/living/carbon/human/source, damage, damagetype, def_zone)
 	if (damagetype == PALE_DAMAGE)
 		to_chat(source,span_nicegreen("Your [src] withers at the touch of death!"))
+		balloon_alert(source, "Your [src] withers at the touch of death!")
 		return ..()
 	to_chat(source,span_nicegreen("You are healed by [src]."))
+	balloon_alert(source, "You are healed by [src].")
 	source.adjustBruteLoss(-10)
 	source.adjustSanityLoss(-5)
 	..()
@@ -804,8 +822,10 @@
 			mode = "Spear"
 			swingstyle = WEAPONSWING_THRUST
 	to_chat(user, span_notice("[src] makes a whirling sound as it changes shape!"))
+	balloon_alert(user, "[src] makes a whirling sound as it changes shape!")
 	if(prob(5))
 		to_chat(user, span_notice("Do you love your city?"))
+		balloon_alert(user, "Do you love your city?")
 	icon_state = "become_strong"+mode_stats[mode][1]
 	update_icon_state()
 	force = mode_stats[mode][2]
@@ -826,8 +846,10 @@
 			windup = min(windup+2, 50)
 		if("Gauntlet")
 			to_chat(user, span_notice("You start winding up your fist!"))
+			balloon_alert(user, "You start winding up your fist!")
 			if(!do_after(user, 0.75 SECONDS, target))
 				to_chat(user, span_warning("You stop winding up your fist!"))
+				balloon_alert(user, "You stop winding up your fist!")
 				return
 			force += windup
 			windup = 0
@@ -839,6 +861,7 @@
 		if(50 to INFINITY)
 			playsound(src, 'sound/weapons/ego/strong_charged2.ogg', 60)
 			to_chat(user, span_nicegreen("[src] beeps and whirls as it reaches full capacity!"))
+			balloon_alert(user, "[src] beeps and whirls as it reaches full capacity!")
 		if(25 to 49)
 			playsound(src, 'sound/weapons/ego/strong_charged1.ogg', 40)
 		else
@@ -874,6 +897,7 @@
 	if(target.stat == DEAD && living)
 		if(!sacrifice)
 			to_chat(user, span_userdanger("Impending Day extends outward!"))
+			balloon_alert(user, "Impending Day extends outward!")
 			playsound('sound/abnormalities/doomsdaycalendar/Doomsday_Attack.ogg', 3, TRUE)
 			sacrifice = FALSE
 		for(var/mob/living/L in range(1, target))
@@ -884,7 +908,7 @@
 			aoe*=force_multiplier
 			if(L == user || ishuman(L))
 				continue
-			L.apply_damage(aoe, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+			L.deal_damage(aoe, BLACK_DAMAGE, user, attack_type = (ATTACK_TYPE_MELEE))
 			new /obj/effect/temp_visual/small_smoke/halfsecond(get_turf(L))
 		icon_state = "impending_day_extended"
 		sacrifice = TRUE
@@ -931,6 +955,7 @@
 	var/mob/living/A = target
 	if(dash_cooldown > world.time)
 		to_chat(user, span_warning("Your dash is still recharging!"))
+		balloon_alert(user, "Your dash is still recharging!")
 		return
 	if((get_dist(user, A) < 2) || (!(can_see(user, A, dash_range))))
 		return
@@ -951,6 +976,7 @@
 		if(get_dist(user, A) < 2)
 			JumpAttack(A,user)
 		to_chat(user, span_warning("You jump towards [A]!"))
+		balloon_alert(user, "You jump towards [A]!")
 		animate(user, alpha = 255,pixel_x = 0, pixel_z = -16, time = 0.1 SECONDS)
 		user.pixel_z = 0
 
@@ -970,7 +996,7 @@
 		aoe*=force_multiplier
 		if(L == user || ishuman(L))
 			continue
-		L.apply_damage(aoe, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+		L.deal_damage(aoe, BLACK_DAMAGE, user, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
 		var/obj/effect/temp_visual/small_smoke/halfsecond/FX =  new(get_turf(L))
 		FX.color = "#b52e19"
 
@@ -1119,18 +1145,21 @@
 /obj/item/ego_weapon/warp/afterattack(atom/target, mob/living/user, proximity_flag, clickparams)
 	if(!CanUseEgo(user))
 		to_chat(user, span_notice("You cannot use this!"))
+		balloon_alert(user, "You cannot use this!")
 		return
 	if(!currently_charging)
 		return
 
 	if(!LAZYLEN(get_path_to(src,target, TYPE_PROC_REF(/turf, Distance), 0, 20)))
 		to_chat(user, span_notice("Invalid target."))
+		balloon_alert(user, "Invalid target.")
 		CancelCharge()
 		return
 
 	if(!proximity_flag)
 		currently_charging = FALSE
 		to_chat(user, span_notice("You release your charge, opening a rift!"))
+		balloon_alert(user, "You release your charge, opening a rift!")
 		var/turf/proj_turf = user.loc
 		if(!isturf(proj_turf))
 			return
@@ -1257,7 +1286,7 @@
 			continue
 		playsound(T, 'sound/weapons/fixer/generic/blade3.ogg', 30, TRUE, 3)
 		new /obj/effect/temp_visual/smash_effect(T)
-		been_hit = user.HurtInTurf(T, been_hit, punishment_damage, PALE_DAMAGE, check_faction = TRUE)
+		been_hit = user.HurtInTurf(T, been_hit, punishment_damage, PALE_DAMAGE, check_faction = TRUE, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
 
 /obj/item/ego_weapon/destiny
 	name = "destiny"
@@ -1288,6 +1317,7 @@
 	if(target != stored_target)
 		stored_target = target
 		to_chat(user, span_notice("You pursue a new target."))
+		balloon_alert(user, "You pursue a new target.")
 		force = initial(force)
 		target_hits = 0
 
@@ -1380,7 +1410,7 @@
 							FORTITUDE_ATTRIBUTE = 40
 							)
 
-/obj/item/ego_weapon/aedd//it's just a HE W.corp baton that deals red
+/obj/item/ego_weapon/aedd//it's just a HE W.corp baton that deals red (becomes low ALEPH tier with the corresponding Realization)
 	name = "AEDD"
 	desc = "A nasty-looking bat covered with nails."
 	special = "Activating the weapon in your hand prepares an attack with additional black damage."
@@ -1397,30 +1427,111 @@
 							FORTITUDE_ATTRIBUTE = 40
 							)
 	var/charged
+	var/base_windup = 3 SECONDS
+	var/realization_force_multiplier = 1.55
+	var/realization_aoe_force_multiplier = 1.4
+	var/realization_aoe_range = 4
+	var/realization_aoe_charge_per_target = 3
+	var/realization_windup_reduction = 1.7 SECONDS
 
 /obj/item/ego_weapon/aedd/attack_self(mob/user)
 	..()
 	if(!CanUseEgo(user))
 		return
-	if(do_after(user, 30, src))//3 seconds
+	var/final_windup = base_windup
+	if(ishuman(user))
+		var/obj/item/clothing/suit/armor/ego_gear/realization/experimentation/our_suit = user.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+		if(istype(our_suit))
+			final_windup -= realization_windup_reduction
+
+	if(do_after(user, final_windup, src))
 		to_chat(user, span_notice("You hoist [src] over your shoulder."))
+		balloon_alert(user, "You hoist [src] over your shoulder.")
 		charged = TRUE
 
+/obj/item/ego_weapon/aedd/examine(mob/user)
+	. = ..()
+	if(ishuman(user))
+		var/obj/item/clothing/suit/armor/ego_gear/realization/experimentation/our_suit = user.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+		if(istype(our_suit))
+			. += span_nicegreen("Due to wearing [our_suit] E.G.O. armour, you've unlocked a portion of this weapon's true potential. Damage is increased, all attacks are now <b>charged by default</b>, and <b>charging the weapon further will unleash a BLACK damage AoE on your next hit</b> that gains Self-Charge for your [our_suit.name] E.G.O. Charging the weapon in this manner has a reduced windup.")
+
+// When not wearing the AEDD realization: deals an extra hit in BLACK damage if we charged the weapon.
+// When wearing the AEDD realization: uses RealizationAOE() towards the target if we charged the weapon; if we didn't, then deals an extra hit in BLACK damage.
 /obj/item/ego_weapon/aedd/attack(mob/living/target, mob/living/user)
 	if(!CanUseEgo(user))
 		return
+	var/realization_empowered = FALSE
+	if(ishuman(user))
+		var/obj/item/clothing/suit/armor/ego_gear/realization/experimentation/our_suit = user.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+		if(istype(our_suit))
+			realization_empowered = TRUE
+			force = initial(force) * realization_force_multiplier
+
 	..()
+
+	if(!istype(target))
+		return
 	if(charged)
-		power_attack(target, user)
+		if(realization_empowered)
+			RealizationAOE(target, user)
+		else
+			power_attack(target, user)
 		charged = FALSE
+	else if(realization_empowered)
+		power_attack(target, user)
 
 /obj/item/ego_weapon/aedd/proc/power_attack(mob/living/target, mob/living/user)
 	var/userjust = (get_modified_attribute_level(user, JUSTICE_ATTRIBUTE))
 	var/justicemod = 1 + userjust/100
-	target.apply_damage((force * justicemod), BLACK_DAMAGE, null, target.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
-	playsound(src, 'sound/abnormalities/thunderbird/tbird_charge.ogg', 50, TRUE)
+	var/final_damage = force * justicemod * force_multiplier
+	target.deal_damage((final_damage), BLACK_DAMAGE, source = user, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
+	playsound(src, 'sound/abnormalities/thunderbird/tbird_charge.ogg', 40, TRUE)
 	var/turf/T = get_turf(target)
 	new /obj/effect/temp_visual/justitia_effect(T)
+
+/// AoE attack used when we're wearing the AEDD Realization and attack an enemy while our weapon is charged. Copied and altered code from Shock Centipede's tail attack.
+/obj/item/ego_weapon/aedd/proc/RealizationAOE(mob/living/target, mob/living/user)
+	if(!ishuman(user))
+		return
+	var/obj/item/clothing/suit/armor/ego_gear/realization/experimentation/our_suit = user.get_item_by_slot(ITEM_SLOT_OCLOTHING)
+	if(!istype(our_suit))
+		return
+
+	var/userjust = (get_modified_attribute_level(user, JUSTICE_ATTRIBUTE))
+	var/justicemod = 1 + userjust/100
+
+	var/final_damage = (initial(force) * realization_force_multiplier * realization_aoe_force_multiplier * justicemod) * force_multiplier
+	user.visible_message(span_danger("[user] slams down [src] with great force, sending a powerful electric shockwave through [target]!"))
+	var/turf/origin_turf = get_turf(src)
+	var/turf/target_turf = get_ranged_target_turf_direct(user, target, realization_aoe_range)
+
+	var/broken = FALSE
+	var/distance = realization_aoe_range
+	var/list/been_hit = list()
+	for(var/turf/T in getline(origin_turf, target_turf))
+		if (distance < 0)
+			break
+		distance--
+		if(T.density)
+			if(broken)
+				break
+			broken = TRUE
+		if(T != origin_turf)
+			for(var/turf/TF in range(1, T))
+				if(TF.density)
+					continue
+				new /obj/effect/temp_visual/blubbering_smash(TF)
+				for(var/mob/living/L in TF)
+					if(!(L in been_hit) && !(user.faction_check_mob(L)))
+						if((L.stat >= DEAD) || istype(L, /mob/living/simple_animal/projectile_blocker_dummy) || L.status_flags & GODMODE)
+							continue
+						L.deal_damage(final_damage, BLACK_DAMAGE, source = user, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
+						been_hit |= L
+						new /obj/effect/temp_visual/justitia_effect(TF)
+						our_suit.AdjustCharge(realization_aoe_charge_per_target)
+
+	playsound(get_turf(src), 'sound/weapons/fixer/generic/energyfinisher1.ogg', 60, 1)
 
 /obj/item/ego_weapon/lance/split
 	name = "split"
@@ -1488,7 +1599,7 @@
 	for(var/turf/T in view(1, target))
 		var/obj/effect/temp_visual/small_smoke/halfsecond/FX =  new(T)
 		FX.color = "#622F22"
-		user.HurtInTurf(T, list(), 40, BLACK_DAMAGE, check_faction = TRUE)
+		user.HurtInTurf(T, list(), 40, BLACK_DAMAGE, check_faction = TRUE, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
 	return
 
 
@@ -1540,6 +1651,7 @@
 			stored_projectiles += 1
 		else
 			to_chat(user, "<span class='warning'>[src] is full!")
+			balloon_alert(user, "[src] is full!")
 	update_icon_state(user)
 	..()
 
@@ -1554,6 +1666,7 @@
 			return
 		if(firing_cooldown >= world.time)
 			to_chat(user, span_notice("[src] is overheated and not ready to fire!"))
+			balloon_alert(user, "[src] is overheated and not ready to fire!")
 			return
 		var/obj/projectile/ego_bullet/lifestew/G = new /obj/projectile/ego_bullet/lifestew(proj_turf)
 		G.fired_from = src //for signal check
@@ -1624,6 +1737,7 @@
 			return
 		if(firing_cooldown >= world.time)
 			to_chat(user, span_notice("The fairy has yet to return!"))
+			balloon_alert(user, "The fairy has yet to return!")
 			return
 		var/obj/projectile/ego_bullet/faelantern/G = new /obj/projectile/ego_bullet/faelantern(proj_turf)
 		G.fired_from = src //for signal check
@@ -1649,6 +1763,7 @@
 /obj/item/ego_weapon/faelantern/proc/Reload(mob/living/carbon/human/firer)
 	if(firing_cooldown < world.time)
 		to_chat(firer, span_notice("The fairy has returned!"))
+		balloon_alert(firer, "The fairy has returned!")
 	update_icon_state(firer)
 
 /obj/projectile/ego_bullet/faelantern
@@ -1683,7 +1798,7 @@
 	return ..()
 
 /datum/status_effect/fairybite/tick()
-	owner.apply_damage(damage_amount, RED_DAMAGE, null, owner.run_armor_check(null, RED_DAMAGE), spread_damage = TRUE)
+	owner.deal_damage(damage_amount, RED_DAMAGE, attack_type = (ATTACK_TYPE_STATUS))
 	playsound(owner, 'sound/abnormalities/mountain/bite.ogg', 70, TRUE) //yes im reusing a sound bite me
 	new /obj/effect/temp_visual/beakbite(get_turf(owner))
 
@@ -1779,10 +1894,10 @@
 							FORTITUDE_ATTRIBUTE = 40
 							)
 
-/obj/item/ego_weapon/mini/voodoo
-	name = "voodoo"
+/obj/item/ego_weapon/mini/gofer
+	name = "Go Fer Scissors"
 	desc = "What seems to be a giant half of a scissors pair."
-	icon_state = "voodoo"
+	icon_state = "voodoo" //I can change the icon state name later if you want, but I'm on the middle of City of Light and it's too much work to open Dream Maker, sorry...
 	special = "This weapon can be paired with a second copy to use both at the same time."
 	force = 18
 	swingstyle = WEAPONSWING_LARGESWEEP
@@ -1795,12 +1910,12 @@
 							FORTITUDE_ATTRIBUTE = 40
 							)
 
-/obj/item/ego_weapon/mini/voodoo/attack(mob/living/target, mob/living/user)
+/obj/item/ego_weapon/mini/gofer/attack(mob/living/target, mob/living/user)
 	if(!CanUseEgo(user))
 		return
 	var/combo = FALSE
 	var/mob/living/carbon/human/myman = user
-	var/obj/item/ego_weapon/mini/voodoo/Y = myman.get_inactive_held_item()
+	var/obj/item/ego_weapon/mini/gofer/Y = myman.get_inactive_held_item()
 	if(istype(Y)) //dual wielding? if so...
 		combo = TRUE //hits twice, you're spending more PE then you would getting a WAW anyways
 	..()
@@ -1850,6 +1965,7 @@
 		charged = TRUE
 		force = 90	//FULL POWER
 		to_chat(user,span_warning("You put your strength behind this attack."))
+		balloon_alert(user, "You put your strength behind this attack.")
 		playsound(src.loc, 'sound/abnormalities/clock/clank.ogg', 75, TRUE)
 		set_light(3, 6, "#D4FAF37")
 		PlayChargeSound()
@@ -1918,6 +2034,7 @@
 	if(prob(poise*2))
 		force*=3
 		to_chat(user, span_userdanger("Critical!"))
+		balloon_alert(user, "Critical!")
 		poise = 0
 	..()
 	combo += 1
@@ -1984,12 +2101,14 @@
 				aoe*=force_multiplier
 				if(L == user || ishuman(L))
 					continue
-				been_hit = user.HurtInTurf(T2, been_hit, aoe, RED_DAMAGE, hurt_mechs = TRUE, hurt_structure = TRUE)
+				been_hit = user.HurtInTurf(T2, been_hit, aoe, RED_DAMAGE, hurt_mechs = TRUE, hurt_structure = TRUE, attack_type = (ATTACK_TYPE_MELEE))
 				var/atom/throw_target = get_edge_target_turf(L, get_dir(L, get_step_towards(L, get_turf(user))))
 				if(!L.anchored)
 					L.throw_at(throw_target, 1, get_dist(user, L) - 1, user)
 				to_chat(user, MESSAGE_TYPE_WARNING, "You reel in [L]!")
+				balloon_alert(user, "You reel in [L]!")
 				to_chat(L, MESSAGE_TYPE_WARNING, "[user] reels you in!")
+				balloon_alert(L, "[user] reels you in!")
 
 /obj/item/ego_weapon/giant_tree_branch
 	name = "giant tree branch"
@@ -2033,14 +2152,17 @@
 		amount_filled = clamp(amount_filled + heal_amt, 0, amount_max)
 		if(amount_filled >= amount_max)
 			to_chat(user, "<span class='warning'>[src] is full!")
+			balloon_alert(user, "[src] is full!")
 	..()
 /obj/item/ego_weapon/giant_tree_branch/attack_self(mob/living/carbon/human/user)
 	..()
 	if(!amount_filled)
 		to_chat(user, "<span class='warning'>[src] is empty!")
+		balloon_alert(user, "[src] is empty!")
 		return
 	if(do_after(user, 12, src))
 		to_chat(user, "<span class='warning'>You take a sip from [src]!")
+		balloon_alert(user, "You take a sip from [src]!")
 		playsound(get_turf(src), 'sound/items/drink.ogg', 50, TRUE) //slurp
 		user.adjustBruteLoss(-amount_filled*2)
 		amount_filled = 0
@@ -2096,6 +2218,7 @@
 	var/dir_to_target = get_dir(get_turf(user), get_turf(target))
 	if(CheckPath(user, dir_to_target))
 		to_chat(user,span_notice("You need more room to do that!"))
+		balloon_alert(user, "You need more room to do that!")
 		return
 	hit_turfs = list()
 	leap_count = 0
@@ -2129,7 +2252,7 @@
 					var/mob/living/carbon/human/H = L
 					if(!H.sanity_lost)
 						continue
-				L.apply_damage(aoe, BLACK_DAMAGE, null, L.run_armor_check(null, BLACK_DAMAGE), spread_damage = TRUE)
+				L.deal_damage(aoe, BLACK_DAMAGE, user, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL))
 				L.visible_message(span_danger("[user] sears [L] with the [src]!"))
 		return
 	addtimer(CALLBACK(src, PROC_REF(Leap), user, dir, leap_range), 0.1)
@@ -2188,9 +2311,11 @@
 	if(HAS_TRAIT(src, TRAIT_NODROP))
 		REMOVE_TRAIT(src, TRAIT_NODROP, SPECIAL)
 		to_chat(user, span_notice("You loosen the [src]."))
+		balloon_alert(user, "You loosen the [src].")
 		return
 	ADD_TRAIT(src, TRAIT_NODROP, SPECIAL)
 	to_chat(user, span_notice("You tightly attach [src] to your body."))
+	balloon_alert("You tightly attatch [src] to your body.")
 
 
 /obj/item/ego_weapon/desert/examine(mob/user)
@@ -2208,9 +2333,11 @@
 	if(activated)
 		activated = FALSE
 		to_chat(user, span_danger("You revoke your preparation of a heavy attack."))
+		balloon_alert(user, "You revoke your preparation of a heavy attack.")
 	else
 		activated = TRUE
 		to_chat(user, span_danger("You prep a heavy attack!"))
+		balloon_alert(user, "You prep a heavy attack!")
 
 
 /obj/item/ego_weapon/desert/attack(mob/living/target, mob/living/user)
@@ -2235,6 +2362,7 @@
 		if(1)
 			if(activated) //H - Drop Kick attack
 				to_chat(user, span_danger("You leap at your target."))
+				balloon_alert(user, "You leap at your target.")
 				step_towards(user,target)
 				stuntime = 20
 				force *= 3
@@ -2245,6 +2373,7 @@
 		if(2)
 			if(activated) //LH - Knockback Palm Strike
 				to_chat(user, span_danger("You strike with your palm."))
+				balloon_alert(user, "You strike with your palm.")
 				hitsound = 'sound/weapons/fixer/generic/gen2.ogg'
 				knockback(target, user)
 				force *= 1.5
@@ -2252,6 +2381,7 @@
 		if(3)
 			if(activated) //LLH - Heavy hitting finisher
 				to_chat(user, span_danger("You strike a critical blow."))
+				balloon_alert(user, "You strike a critical blow.")
 				during_windup = TRUE
 				force *= 2.5
 				hitsound = 'sound/weapons/fixer/generic/gen2.ogg'
@@ -2272,6 +2402,7 @@
 	if(activated)
 		chain=0
 		to_chat(user, span_danger("Your chain is reset."))
+		balloon_alert(user, "Your chain is reset.")
 		activated = FALSE
 	force = initial(force)
 	hitsound = initial(hitsound)
@@ -2299,3 +2430,4 @@
 		A.attackby(src,user)
 	playsound(src, 'sound/weapons/fixer/generic/dodge.ogg', 50, FALSE, 9)
 	to_chat(user, "<span class='warning'>You dash to [A]!")
+	balloon_alert(user, "You dash to [A]!")

@@ -10,8 +10,6 @@
 	a_intent = INTENT_HARM
 	del_on_death = TRUE
 	damage_coeff = list(RED_DAMAGE = 1, WHITE_DAMAGE = 1, BLACK_DAMAGE = 1, PALE_DAMAGE = 1)
-	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
-	minbodytemp = 0
 	see_in_dark = 7
 	vision_range = 12
 	aggro_vision_range = 20
@@ -183,9 +181,9 @@
 			if(suit_slot_item)
 				qdel(suit_slot_item)
 			var/obj/item/clothing/suit/armor/ego_gear/equippable_gear = new gear(get_turf(src))
-			equippable_gear.equip_slowdown = 0
+			equippable_gear.equip_delay_self = 0
 			egoist.equip_to_slot(equippable_gear,ITEM_SLOT_OCLOTHING, TRUE)
-			equippable_gear.equip_slowdown = 3
+			equippable_gear.equip_delay_self = initial(equippable_gear.equip_delay_self)
 		else
 			egoist.put_in_hands(new gear(egoist))
 	PostUnmanifest(egoist)
