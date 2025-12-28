@@ -26,6 +26,7 @@
 	butcher_results = list(/obj/item/food/meat/slab/robot = 22)
 	guaranteed_butcher_results = list(/obj/item/food/meat/slab/robot = 16)
 	death_sound = 'sound/effects/ordeals/green/midnight_dead.ogg'
+	offsets_pixel_x = list("south" = -96, "north" = -96, "west" = -96, "east" = -96)
 	damage_effect_scale = 1.25
 	rapid = 50
 	rapid_fire_delay = 0.4
@@ -38,12 +39,6 @@
 	melee_reach = 0
 
 //Enemies made by Xeros with bits of help from other coders listed below.
-
-/mob/living/simple_animal/hostile/ordeal/grungeon_boss/Initialize()
-	. = ..()
-	var/matrix/shift = matrix(transform)
-	shift.Translate(-96, 0)
-	transform = shift
 
 /mob/living/simple_animal/hostile/ordeal/grungeon_boss/Move()
 	return FALSE
@@ -73,8 +68,6 @@
 	desc = "A 9mm casing."
 	projectile_type = /obj/projectile/ego_bullet/ego_soda
 	variance = 45
-<<<<<<< Updated upstream
-=======
 
 /mob/living/simple_animal/hostile/ordeal/grungeon_boss/proc/shoot_projectile(turf/marker, set_angle) //Copypasted Colossus Code
 	if(!isnum(set_angle) && (!marker || marker == loc))
@@ -193,6 +186,3 @@
 	. = ..()
 	for(var/mob/living/simple_animal/hostile/ordeal/grungeon_spawner/Z in range(15, src)) //Many thanks to Ender for helping me see the minor error in the code that prevented this from working.
 		Z.death()
-
-// Could use COMSIG_LIVING_DEATH maybe?
->>>>>>> Stashed changes
