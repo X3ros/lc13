@@ -1,0 +1,12201 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/item/bodypart/head,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ak" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/red/corner,
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"al" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ar" = (
+/obj/structure/closet/crate,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"aI" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/tower{
+	signal_code = 33;
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"aQ" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"aZ" = (
+/obj/structure/closet/crate,
+/obj/item/tresmetal/green,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"bl" = (
+/obj/structure/sign/departments/security,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"bE" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"bR" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"bS" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"bZ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/clothing/suit/armor/ego_gear/ordeal/painful_purpose,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"cw" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"cB" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"cX" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"db" = (
+/obj/machinery/door/poddoor,
+/obj/machinery/door/poddoor{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"dl" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"dn" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"dy" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/plating,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"dL" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"dU" = (
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"eb" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ef" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"et" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"eA" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"eB" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "factoryvault"
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"eH" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"fz" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"fA" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"fM" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"fR" = (
+/obj/structure/fluff/big_chain{
+	resistance_flags = 3
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"fT" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gl" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64
+	},
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gv" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gE" = (
+/obj/structure/sign/departments/engineering{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gK" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gS" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gU" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1;
+	delay_time = 600
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gW" = (
+/obj/structure/railing/corner,
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"gX" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "factoryentrance"
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"hc" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ho" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"hH" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"hK" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/syringe,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"hN" = (
+/obj/structure/railing{
+	dir = 6
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"if" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"io" = (
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"is" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"iA" = (
+/obj/structure/sign/departments/engineering,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"iE" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"je" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"jf" = (
+/obj/structure/lootcrate/hana,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ju" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"jY" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"jZ" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"kt" = (
+/obj/structure/destructible/cult/forge{
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ky" = (
+/obj/machinery/conveyor/auto{
+	dir = 9;
+	resistance_flags = 64
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"kD" = (
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"kX" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"le" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 44
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"lp" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"lW" = (
+/obj/structure/plasticflaps/opaque{
+	resistance_flags = 64
+	},
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"mm" = (
+/obj/structure/railing/corner,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"mn" = (
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"mE" = (
+/obj/structure/sign/departments/mait/alt,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"mL" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical/old{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/item/surgical_drapes{
+	pixel_x = -7
+	},
+/turf/open/floor/circuit,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"mV" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"nI" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"nQ" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ot" = (
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"oy" = (
+/obj/structure/sign/directions/engineering{
+	dir = 8
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"pe" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/turf/open/floor/circuit,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"pz" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 5
+	},
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"pM" = (
+/obj/machinery/button/door{
+	req_access_txt = "1000";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"pS" = (
+/obj/effect/turf_decal/siding/red,
+/obj/structure/sigsystem/connector/split{
+	dir = 1;
+	happens_once = 1
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"pY" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"qi" = (
+/obj/structure/railing{
+	dir = 7
+	},
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"qr" = (
+/obj/structure/sigsystem/tower,
+/obj/structure/sigsystem/tower,
+/obj/structure/sigsystem/tower{
+	signal_code = 55
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"qs" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"qJ" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"qO" = (
+/obj/machinery/button/door{
+	id = "factoryvault";
+	resistance_flags = 64;
+	idle_power_usage = 0
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"rf" = (
+/obj/machinery/light/red,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ro" = (
+/obj/structure/headpike,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"rr" = (
+/mob/living/simple_animal/hostile/ordeal/grungeon_boss,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"sw" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/fast,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"sB" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 4
+	},
+/obj/machinery/recharge_station{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"sJ" = (
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"tQ" = (
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"uf" = (
+/obj/structure/railing{
+	dir = 9
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"uM" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"uW" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/turf_decal/siding/red/corner{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"uZ" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"vb" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"vd" = (
+/obj/structure/sign/directions/evac{
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"wh" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"wm" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ww" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"wF" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 9
+	},
+/obj/machinery/mech_bay_recharge_port{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"wY" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"xs" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"xy" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"xD" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"xE" = (
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"xI" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"yh" = (
+/obj/machinery/light/small/red,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"yi" = (
+/obj/structure/sign/directions/evac{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"yj" = (
+/obj/structure/sign/directions/vault{
+	dir = 1
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"yy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"yM" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 8;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"zF" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 33
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"zX" = (
+/obj/structure/railing{
+	dir = 7
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ar" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"AX" = (
+/obj/structure/lootcrate/tres,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Bh" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"BI" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"BK" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"BL" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"BT" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"BX" = (
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Cc" = (
+/obj/structure/railing{
+	dir = 10
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ck" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"CC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"CE" = (
+/obj/machinery/light/red{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"CN" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"CZ" = (
+/obj/machinery/light/small/red,
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Dg" = (
+/obj/structure/fence,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"DA" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"DP" = (
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"DU" = (
+/obj/effect/landmark/cratespawn,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"DV" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"DY" = (
+/obj/structure/sigsystem/deployer{
+	atom_path = /mob/living/simple_animal/hostile/ordeal/grungeon_spawner
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ei" = (
+/obj/machinery/button/door{
+	id = "factoryentrance";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ew" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/old,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"EA" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"EO" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ER" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Fh" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Fm" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/fast,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"FF" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 4
+	},
+/obj/machinery/recharge_station{
+	resistance_flags = 64
+	},
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"FX" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Gs" = (
+/obj/machinery/button/door{
+	id = "foundryaccess";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Gu" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"GE" = (
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"GM" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 1
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"GV" = (
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Hg" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Hi" = (
+/turf/open/floor/mineral/gold,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Hm" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector/split{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Hs" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Hy" = (
+/obj/structure/sign/departments/mait/alt{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"HA" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"HH" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"HK" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"HN" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 10
+	},
+/obj/machinery/mech_bay_recharge_port{
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ic" = (
+/obj/effect/landmark/cratespawn/corpo,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Id" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Is" = (
+/obj/effect/turf_decal/siding/thinplating/light,
+/obj/machinery/light,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"It" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "factoryentrance"
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"IF" = (
+/obj/structure/sigsystem/tower{
+	signal_code = 55
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Jq" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Jy" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 8
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ka" = (
+/obj/structure/sigsystem/connector,
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Kk" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Kl" = (
+/obj/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Kq" = (
+/obj/structure/flora/rock,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"KA" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 1;
+	mobs_only = 1
+	},
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"KG" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"KH" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"KU" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"La" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Lj" = (
+/obj/structure/sigsystem/connector/split{
+	dir = 4;
+	happens_once = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ls" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"LQ" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Mx" = (
+/obj/machinery/conveyor/auto{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"MA" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"MH" = (
+/obj/structure/sigsystem/tower{
+	dir = 1;
+	signal_code = 44
+	},
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Nt" = (
+/obj/item/forginghammer,
+/obj/item/forginghammer,
+/obj/item/forginghammer,
+/obj/structure/rack,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Nw" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/structure/railing{
+	dir = 7
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Nx" = (
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"NG" = (
+/obj/structure/sigsystem/announcer{
+	message = "Dance, organic! Dance!";
+	message_range = 6
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"NS" = (
+/obj/structure/lootcrate/money,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ol" = (
+/obj/machinery/door/poddoor/shutters/indestructible,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Pb" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Pi" = (
+/obj/structure/closet/crate,
+/obj/item/tresmetal,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Pn" = (
+/turf/closed/indestructible/rock,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Pz" = (
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"PZ" = (
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "foundryaccess"
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Qi" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/circuit/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Qt" = (
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Qw" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Qy" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Rf" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot_big,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"RH" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/structure/sigsystem/connector{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"RK" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"RU" = (
+/obj/structure/sigsystem/deployer{
+	atom_path = "/mob/living/simple_animal/hostile/ordeal/grungeon_spawner"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Si" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Sq" = (
+/obj/structure/lootcrate/tres,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"SR" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ST" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"SZ" = (
+/obj/structure/sign/warning/fire{
+	desc = "A warning sign which reads 'DANGER: FIRE'. A small inscription beneath it says, 'Do not attempt to crawl under the flaps'.";
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Tc" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Tj" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/obj/structure/sigsystem/activator,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Tm" = (
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TC" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/sigsystem/tower{
+	dir = 8;
+	signal_code = 55
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TG" = (
+/obj/structure/railing{
+	dir = 5
+	},
+/obj/structure/sigsystem/connector{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TH" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TI" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/machinery/door/poddoor/shutters/indestructible{
+	id = "factoryentrance"
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TT" = (
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"TW" = (
+/obj/structure/sigsystem/pressure_plate{
+	dir = 4;
+	mobs_only = 1
+	},
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ua" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Uc" = (
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/obj/structure/railing/corner,
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Uh" = (
+/obj/machinery/conveyor/auto{
+	dir = 1;
+	resistance_flags = 64
+	},
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Uw" = (
+/mob/living/simple_animal/hostile/ordeal/green_bot/syringe,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"UC" = (
+/obj/machinery/conveyor/auto{
+	dir = 4;
+	resistance_flags = 64
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"UD" = (
+/obj/machinery/door/poddoor{
+	resistance_flags = 64
+	},
+/obj/structure/sigsystem/connector,
+/obj/structure/sigsystem/activator,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"UH" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"UM" = (
+/obj/machinery/conveyor/auto{
+	dir = 5;
+	resistance_flags = 64
+	},
+/turf/open/lava,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"US" = (
+/turf/open/space/basic,
+/area/space)
+"UY" = (
+/obj/effect/decal/cleanable/blood/innards,
+/obj/effect/turf_decal/siding/green,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Vf" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Vn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 1
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"VL" = (
+/obj/structure/fence,
+/obj/structure/fence,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"WH" = (
+/obj/structure/railing{
+	resistance_flags = 115;
+	name = "wing-grade railing";
+	desc = "Indestructible railing created in a vain attempt of fool-proofing the wing's workplace.";
+	mouse_opacity = 0;
+	dir = 8
+	},
+/obj/effect/decal/cleanable/oil/slippery,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"WU" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Xg" = (
+/obj/item/bodypart/head,
+/turf/open/floor/plating/asteroid/basalt,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Xq" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/pod/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"XC" = (
+/obj/structure/sigsystem/connector{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"XW" = (
+/obj/structure/table/reinforced,
+/obj/structure/lootcrate/hana,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Ya" = (
+/obj/effect/turf_decal/siding/green/corner{
+	dir = 4
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Yc" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/chasm,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"YB" = (
+/obj/machinery/light,
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"YJ" = (
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"YL" = (
+/obj/structure/table/reinforced,
+/obj/structure/lootcrate/money,
+/turf/open/floor/facility/dark,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"YV" = (
+/obj/structure/lootcrate/tres,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Za" = (
+/obj/structure/sigsystem/connector,
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Zb" = (
+/obj/structure/sign/departments/cargo{
+	resistance_flags = 64
+	},
+/turf/closed/indestructible/syndicate,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Zj" = (
+/turf/open/floor/circuit,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"Zt" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ZD" = (
+/obj/structure/closet/crate,
+/obj/item/tresmetal/green,
+/obj/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ZQ" = (
+/obj/effect/turf_decal/siding/thinplating/light{
+	dir = 6
+	},
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8;
+	resistance_flags = 64
+	},
+/turf/open/floor/facility,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+"ZV" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/turf_decal/siding/green/corner,
+/turf/open/floor/pod/light,
+/area/city/outskirts{
+	name = "Outskirts Factory"
+	})
+
+(1,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+"}
+(2,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(3,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+fR
+TT
+TT
+TT
+fR
+TT
+TT
+TT
+fR
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(4,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+TT
+TT
+UM
+Id
+Id
+Id
+ky
+TT
+TT
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(5,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+fR
+TT
+DV
+TT
+fR
+TT
+Mx
+TT
+fR
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(6,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+WH
+wm
+UC
+wm
+wh
+wm
+is
+Kk
+Kk
+gl
+lW
+Uh
+Uh
+Uh
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(7,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+sJ
+kt
+UC
+kt
+sJ
+sJ
+RK
+sJ
+sJ
+xE
+xE
+xE
+xE
+je
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(8,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+sJ
+Pb
+UC
+Pb
+sJ
+RK
+sJ
+sJ
+Pz
+xE
+io
+io
+xE
+je
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(9,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+KU
+kt
+UC
+kt
+sJ
+RK
+sJ
+RK
+YB
+xE
+io
+io
+xE
+je
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(10,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+sJ
+Pb
+UC
+Pb
+sJ
+sJ
+sJ
+Pz
+sJ
+xE
+io
+io
+xE
+je
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+Dg
+VL
+Dg
+Dg
+Dg
+Dg
+io
+io
+io
+io
+Pn
+"}
+(11,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+Nt
+sJ
+sJ
+ef
+sJ
+RK
+sJ
+qs
+sJ
+xE
+io
+io
+xE
+je
+xE
+xE
+xE
+Pi
+Pb
+AX
+aZ
+cX
+aZ
+AX
+xE
+lp
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(12,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+DY
+RH
+al
+al
+RH
+al
+bS
+bS
+bS
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+et
+tQ
+tQ
+xE
+xE
+xE
+xE
+io
+io
+xE
+je
+xE
+xE
+xE
+sJ
+sJ
+sJ
+Pz
+RK
+sJ
+RK
+Ol
+GV
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(13,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+fT
+fT
+fT
+sJ
+sJ
+sJ
+sJ
+fT
+fT
+fT
+DP
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+tQ
+et
+xE
+io
+io
+io
+io
+io
+xE
+je
+Uh
+gl
+Uh
+Qi
+sJ
+sJ
+sJ
+sJ
+dU
+RK
+Ol
+GV
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(14,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+nQ
+fT
+sJ
+sJ
+sJ
+xE
+xE
+sJ
+sJ
+sJ
+fT
+fz
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+iA
+Nx
+et
+yh
+gE
+io
+io
+io
+io
+io
+xE
+je
+xE
+xE
+SZ
+ZD
+sJ
+sJ
+RK
+sJ
+RK
+sJ
+Ol
+GV
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(15,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+xE
+fT
+fT
+sJ
+sJ
+fT
+fT
+xE
+xE
+fT
+fT
+sJ
+sJ
+fz
+fT
+xE
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+Za
+xI
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+xE
+je
+Uh
+gl
+Uh
+dU
+sJ
+sJ
+sJ
+sJ
+Qi
+RK
+Ol
+GV
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(16,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+fT
+fT
+sJ
+sJ
+fT
+fT
+sJ
+Kl
+sJ
+sJ
+fT
+fT
+sJ
+pY
+fT
+CZ
+DP
+zX
+dy
+Nw
+dy
+qi
+dy
+qi
+dy
+qi
+dy
+Yc
+xI
+io
+io
+io
+xE
+et
+tQ
+et
+xE
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+Pz
+sJ
+sJ
+Pb
+sJ
+sJ
+RK
+Ol
+GV
+GV
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(17,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+pY
+sJ
+Ka
+DP
+kD
+Jq
+jZ
+Jq
+jZ
+Jq
+jZ
+Jq
+jZ
+Jq
+xD
+xI
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+sJ
+sJ
+sJ
+sJ
+YV
+sw
+sJ
+xE
+lp
+ar
+GV
+GV
+GV
+GV
+io
+io
+io
+io
+Pn
+"}
+(18,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+DA
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+fT
+fT
+xE
+xE
+fT
+fz
+sJ
+fz
+qr
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+xI
+io
+io
+io
+xE
+tQ
+tQ
+et
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+tQ
+et
+xE
+xE
+pM
+xE
+xE
+Dg
+Dg
+Dg
+Dg
+Dg
+Dg
+io
+io
+io
+io
+Pn
+"}
+(19,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+xE
+xE
+xE
+xE
+xE
+fT
+sJ
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+xE
+GE
+fz
+sJ
+fz
+bS
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+xI
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+et
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(20,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+XW
+jf
+GV
+Sq
+xE
+fT
+sJ
+fT
+sJ
+fT
+fT
+sJ
+sJ
+sJ
+sJ
+fT
+fT
+sJ
+fz
+TW
+dl
+DP
+Qt
+Qt
+Qt
+Qt
+uf
+uM
+Cc
+Qt
+Qt
+Qt
+Qt
+xI
+xE
+bl
+xE
+yj
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Zb
+Nx
+tQ
+yh
+xE
+io
+io
+io
+io
+io
+io
+Kq
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(21,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+XW
+Hi
+Hi
+GV
+xE
+fT
+sJ
+fT
+sJ
+fT
+sJ
+sJ
+dU
+dU
+sJ
+sJ
+fT
+sJ
+fz
+TW
+fT
+gS
+BT
+le
+GM
+TC
+ak
+KA
+ju
+Gu
+Vf
+Ua
+Ls
+Tj
+tQ
+tQ
+tQ
+et
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+et
+KH
+et
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(22,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+bZ
+Hi
+Hi
+GV
+eB
+fT
+rr
+fT
+sJ
+fT
+sJ
+dU
+sJ
+sJ
+dU
+sJ
+fT
+sJ
+Lj
+BL
+zF
+Hm
+MH
+dU
+ER
+ot
+pS
+NG
+BX
+dU
+dU
+dU
+dU
+Tj
+tQ
+tQ
+tQ
+tQ
+tQ
+et
+yh
+xE
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+tQ
+tQ
+tQ
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(23,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+YL
+Hi
+Hi
+Ic
+qO
+fT
+sJ
+fT
+sJ
+fT
+sJ
+sJ
+dU
+dU
+sJ
+sJ
+fT
+sJ
+Bh
+yM
+fT
+eH
+HA
+aI
+gU
+HA
+uW
+Jy
+mm
+HA
+HA
+if
+if
+Tj
+tQ
+tQ
+tQ
+tQ
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+xE
+Tm
+Tm
+KG
+bE
+Tm
+Tm
+Tm
+Tm
+Tm
+wY
+Tm
+Tm
+yy
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(24,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+YL
+NS
+GV
+DU
+xE
+fT
+sJ
+fT
+sJ
+fT
+fT
+sJ
+sJ
+sJ
+sJ
+fT
+fT
+sJ
+Bh
+yM
+dl
+xE
+Qt
+Qt
+Qt
+Qt
+TG
+Fh
+hN
+Qt
+Qt
+Qt
+Qt
+xE
+xE
+bl
+xE
+oy
+tQ
+tQ
+et
+vd
+io
+io
+io
+io
+xE
+Tm
+CC
+WU
+WU
+Ya
+yy
+Tm
+Tm
+ZV
+Hs
+Ew
+Ya
+yy
+xE
+io
+io
+io
+Kq
+io
+io
+io
+io
+io
+Pn
+"}
+(25,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+xE
+xE
+xE
+xE
+xE
+xE
+fT
+sJ
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+xE
+GE
+Bh
+sJ
+fT
+xE
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+Qt
+xE
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+xE
+uZ
+Si
+xE
+xE
+eb
+yy
+yy
+Tm
+UY
+xE
+xE
+eb
+Fm
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(26,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+DA
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+fT
+fT
+xE
+xE
+fT
+Bh
+sJ
+fT
+IF
+UD
+UD
+UD
+UD
+UD
+UD
+UD
+db
+UD
+UD
+UD
+xE
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+xE
+io
+io
+io
+io
+xE
+Tm
+Si
+xE
+xE
+eb
+gv
+Tm
+Tm
+mn
+xE
+xE
+eb
+rf
+xE
+xE
+xE
+xE
+xE
+xE
+Dg
+Dg
+Dg
+Dg
+Pn
+"}
+(27,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+sJ
+sJ
+fT
+fT
+XC
+sJ
+fT
+xE
+gW
+HK
+Uc
+HK
+Uc
+HK
+Uc
+HK
+Uc
+HK
+MA
+xE
+io
+io
+io
+xE
+et
+tQ
+tQ
+xE
+xE
+xE
+xE
+xE
+xE
+Tm
+EO
+Zt
+cB
+Ck
+Tm
+Tm
+ww
+EO
+dn
+hc
+Vn
+qJ
+xE
+xE
+HH
+et
+gK
+tQ
+io
+ro
+io
+io
+Pn
+"}
+(28,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+fT
+fT
+sJ
+sJ
+fT
+fT
+sJ
+BK
+sJ
+sJ
+fT
+fT
+sJ
+XC
+fT
+CZ
+xE
+zX
+dy
+qi
+dy
+qi
+dy
+qi
+dy
+qi
+dy
+Yc
+xE
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+tQ
+tQ
+gK
+tQ
+et
+PZ
+Tm
+Uw
+Tm
+yy
+Tm
+yy
+Tm
+Tm
+eA
+Tm
+Tm
+yy
+yy
+TI
+fM
+et
+Xq
+fM
+tQ
+io
+io
+io
+Xg
+Pn
+"}
+(29,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+xE
+xE
+fT
+fT
+sJ
+sJ
+fT
+fT
+xE
+xE
+fT
+fT
+sJ
+sJ
+Bh
+fT
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+xE
+tQ
+tQ
+tQ
+et
+tQ
+et
+et
+tQ
+PZ
+Tm
+Tm
+yy
+yy
+yy
+Tm
+Tm
+Tm
+Tm
+yy
+qJ
+yy
+Tm
+gX
+TH
+fM
+fM
+Qy
+tQ
+io
+io
+io
+io
+Pn
+"}
+(30,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+mV
+fT
+sJ
+sJ
+sJ
+xE
+xE
+sJ
+sJ
+sJ
+fT
+Bh
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+dL
+tQ
+tQ
+tQ
+tQ
+et
+et
+PZ
+Tm
+Tm
+Tm
+Tm
+Rf
+Tm
+aQ
+yy
+ad
+Tm
+Tm
+Tm
+Tm
+It
+et
+Xq
+et
+tQ
+tQ
+io
+io
+io
+io
+Pn
+"}
+(31,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+fT
+fT
+fT
+sJ
+sJ
+sJ
+sJ
+fT
+fT
+fT
+xI
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+yi
+xE
+Gs
+xE
+Fm
+UH
+WU
+CN
+Ya
+Tm
+Tm
+vb
+ZV
+xs
+WU
+Ya
+Tm
+xE
+Ei
+tQ
+tQ
+jY
+tQ
+kX
+ro
+io
+io
+Pn
+"}
+(32,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+RU
+Hg
+al
+al
+Hg
+al
+bS
+bS
+bS
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+yy
+Si
+xE
+xE
+xy
+Tm
+FX
+Tm
+mn
+xE
+xE
+eb
+hK
+xE
+xE
+xE
+xE
+xE
+xE
+Dg
+Dg
+Dg
+Dg
+Pn
+"}
+(33,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+bR
+mn
+xE
+xE
+eb
+yy
+Tm
+La
+mn
+xE
+xE
+Qw
+rf
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(34,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+Tm
+EA
+hc
+ho
+Ck
+Tm
+yy
+FX
+EO
+hc
+ho
+Ck
+Tm
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(35,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+yy
+yy
+Tm
+CE
+Tm
+Tm
+FX
+Tm
+yy
+BI
+Tm
+Tm
+yy
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(36,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+Tm
+FX
+Tm
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(37,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+SR
+tQ
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(38,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+SR
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(39,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Hy
+tQ
+tQ
+tQ
+mE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(40,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+tQ
+SR
+tQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(41,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+tQ
+tQ
+tQ
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(42,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+wF
+cw
+Tc
+pe
+cw
+cw
+HN
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(43,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+hH
+YJ
+YJ
+Ar
+YJ
+nI
+fA
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(44,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+ST
+Zj
+YJ
+Zj
+Ar
+Zj
+Is
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(45,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+LQ
+Ar
+YJ
+nI
+YJ
+YJ
+iE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(46,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+pz
+sB
+FF
+mL
+sB
+sB
+ZQ
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(47,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+xE
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+Pn
+"}
+(48,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+Pn
+"}
+(49,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(50,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(51,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(52,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(53,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(54,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(55,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(56,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(57,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(58,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(59,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(60,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(61,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(62,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(63,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(64,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(65,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(66,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(67,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(68,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(69,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(70,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(71,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(72,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(73,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(74,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(75,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(76,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(77,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(78,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(79,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(80,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(81,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(82,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(83,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(84,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(85,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(86,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(87,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(88,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(89,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(90,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(91,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(92,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(93,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(94,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(95,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(96,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(97,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(98,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(99,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
+(100,1,1) = {"
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+US
+"}
