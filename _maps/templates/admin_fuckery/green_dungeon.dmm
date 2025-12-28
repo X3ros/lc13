@@ -2,9 +2,6 @@
 "ad" = (
 /obj/item/bodypart/head,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ak" = (
 /obj/structure/railing/corner{
@@ -16,25 +13,16 @@
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "al" = (
 /obj/structure/sigsystem/connector{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ar" = (
 /obj/structure/closet/crate,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "aI" = (
 /obj/structure/railing{
@@ -45,58 +33,37 @@
 	dir = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "aQ" = (
 /obj/effect/decal/cleanable/blood/gibs/torso,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "aZ" = (
 /obj/structure/closet/crate,
 /obj/item/tresmetal/green,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "bl" = (
 /obj/structure/sign/departments/security,
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "bE" = (
 /obj/machinery/light/red{
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "bR" = (
 /obj/machinery/light/red{
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "bS" = (
 /obj/structure/sigsystem/connector{
 	dir = 1
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "bZ" = (
 /obj/structure/table/reinforced,
@@ -105,18 +72,12 @@
 	},
 /obj/item/clothing/suit/armor/ego_gear/ordeal/painful_purpose,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "cw" = (
 /obj/effect/turf_decal/siding/thinplating/light{
 	dir = 8
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "cB" = (
 /obj/machinery/light/small/red{
@@ -126,18 +87,12 @@
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "cX" = (
 /obj/machinery/light/small/red{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "db" = (
 /obj/machinery/door/poddoor,
@@ -147,9 +102,6 @@
 /obj/structure/sigsystem/connector,
 /obj/structure/sigsystem/activator,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "dl" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -157,9 +109,6 @@
 	mobs_only = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "dn" = (
 /obj/machinery/light/small/red{
@@ -170,71 +119,44 @@
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "dy" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
 /turf/open/floor/plating,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "dL" = (
 /obj/machinery/light/small/red{
 	dir = 4
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "dU" = (
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "eb" = (
 /obj/effect/turf_decal/siding/green{
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ef" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "et" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "eA" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "eB" = (
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "factoryvault"
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "eH" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -242,47 +164,29 @@
 	},
 /obj/structure/sigsystem/activator,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "fz" = (
 /obj/structure/sigsystem/connector{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "fA" = (
 /obj/effect/turf_decal/siding/thinplating/light,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "fM" = (
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "fR" = (
 /obj/structure/fluff/big_chain{
 	resistance_flags = 3
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "fT" = (
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gl" = (
 /obj/machinery/conveyor/auto{
@@ -293,34 +197,22 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gv" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gE" = (
 /obj/structure/sign/departments/engineering{
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gK" = (
 /obj/machinery/light/small/red{
 	dir = 8
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gS" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -331,9 +223,6 @@
 	},
 /obj/structure/sigsystem/activator,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gU" = (
 /obj/structure/railing{
@@ -344,16 +233,10 @@
 	delay_time = 600
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gW" = (
 /obj/structure/railing/corner,
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "gX" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -361,18 +244,12 @@
 	id = "factoryentrance"
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "hc" = (
 /obj/effect/turf_decal/siding/green{
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ho" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -380,9 +257,6 @@
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "hH" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -391,26 +265,17 @@
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "hK" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot/syringe,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "hN" = (
 /obj/structure/railing{
 	dir = 6
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "if" = (
 /obj/structure/railing{
@@ -418,15 +283,9 @@
 	},
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "io" = (
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "is" = (
 /obj/machinery/conveyor/auto{
@@ -434,24 +293,15 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "iA" = (
 /obj/structure/sign/departments/engineering,
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "iE" = (
 /obj/effect/turf_decal/siding/thinplating/light,
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "je" = (
 /obj/machinery/conveyor/auto{
@@ -459,16 +309,10 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "jf" = (
 /obj/structure/lootcrate/hana,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ju" = (
 /obj/structure/railing/corner{
@@ -478,9 +322,6 @@
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "jY" = (
 /obj/effect/decal/cleanable/blood/gibs/old,
@@ -488,9 +329,6 @@
 	dir = 4
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "jZ" = (
 /obj/structure/railing/corner{
@@ -500,18 +338,12 @@
 	dir = 8
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "kt" = (
 /obj/structure/destructible/cult/forge{
 	resistance_flags = 64
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ky" = (
 /obj/machinery/conveyor/auto{
@@ -519,25 +351,16 @@
 	resistance_flags = 64
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "kD" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "kX" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "le" = (
 /obj/structure/railing{
@@ -549,18 +372,12 @@
 	signal_code = 44
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "lp" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "lW" = (
 /obj/structure/plasticflaps/opaque{
@@ -571,9 +388,6 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "mm" = (
 /obj/structure/railing/corner,
@@ -582,23 +396,14 @@
 	dir = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "mn" = (
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "mE" = (
 /obj/structure/sign/departments/mait/alt,
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "mL" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -616,61 +421,40 @@
 	pixel_x = -7
 	},
 /turf/open/floor/circuit,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "mV" = (
 /obj/machinery/light/small/red{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "nI" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "nQ" = (
 /obj/machinery/light/small/red{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ot" = (
 /obj/structure/sigsystem/connector{
 	dir = 1
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "oy" = (
 /obj/structure/sign/directions/engineering{
 	dir = 8
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "pe" = (
 /obj/effect/turf_decal/siding/thinplating/light{
 	dir = 8
 	},
 /turf/open/floor/circuit,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "pz" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -681,9 +465,6 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "pM" = (
 /obj/machinery/button/door{
@@ -691,9 +472,6 @@
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "pS" = (
 /obj/effect/turf_decal/siding/red,
@@ -702,18 +480,12 @@
 	happens_once = 1
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "pY" = (
 /obj/structure/sigsystem/connector{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "qi" = (
 /obj/structure/railing{
@@ -723,9 +495,6 @@
 	dir = 1
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "qr" = (
 /obj/structure/sigsystem/tower,
@@ -734,23 +503,14 @@
 	signal_code = 55
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "qs" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "qJ" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "qO" = (
 /obj/machinery/button/door{
@@ -759,37 +519,22 @@
 	idle_power_usage = 0
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "rf" = (
 /obj/machinery/light/red,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ro" = (
 /obj/structure/headpike,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "rr" = (
 /mob/living/simple_animal/hostile/ordeal/grungeon_boss,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "sw" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot/fast,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "sB" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -799,21 +544,12 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "sJ" = (
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "tQ" = (
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "uf" = (
 /obj/structure/railing{
@@ -823,9 +559,6 @@
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "uM" = (
 /obj/structure/railing{
@@ -836,9 +569,6 @@
 	mobs_only = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "uW" = (
 /obj/structure/railing/corner{
@@ -852,9 +582,6 @@
 	dir = 8
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "uZ" = (
 /obj/machinery/light/red{
@@ -862,25 +589,16 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "vb" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "vd" = (
 /obj/structure/sign/directions/evac{
 	dir = 4
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "wh" = (
 /obj/structure/railing{
@@ -892,9 +610,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "wm" = (
 /obj/structure/railing{
@@ -905,17 +620,11 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ww" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "wF" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -925,9 +634,6 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "wY" = (
 /obj/machinery/light/red{
@@ -935,9 +641,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "xs" = (
 /obj/machinery/light/small/red{
@@ -948,9 +651,6 @@
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "xy" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
@@ -958,65 +658,41 @@
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "xD" = (
 /obj/structure/railing/corner{
 	dir = 1
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "xE" = (
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "xI" = (
 /obj/structure/sigsystem/connector{
 	dir = 4
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "yh" = (
 /obj/machinery/light/small/red,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "yi" = (
 /obj/structure/sign/directions/evac{
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "yj" = (
 /obj/structure/sign/directions/vault{
 	dir = 1
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "yy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "yM" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -1027,68 +703,44 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "zF" = (
 /obj/structure/sigsystem/tower{
 	signal_code = 33
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "zX" = (
 /obj/structure/railing{
 	dir = 7
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ar" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "AX" = (
 /obj/structure/lootcrate/tres,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Bh" = (
 /obj/structure/sigsystem/connector{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "BI" = (
 /obj/machinery/light/red{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "BK" = (
 /obj/machinery/light/red{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "BL" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -1099,9 +751,6 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "BT" = (
 /obj/structure/railing{
@@ -1109,45 +758,30 @@
 	},
 /obj/effect/decal/cleanable/blood/footprints,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "BX" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Cc" = (
 /obj/structure/railing{
 	dir = 10
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ck" = (
 /obj/effect/turf_decal/siding/green/corner{
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "CC" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/turf_decal/siding/green/corner,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "CE" = (
 /obj/machinery/light/red{
@@ -1155,9 +789,6 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "CN" = (
 /obj/machinery/light/small/red{
@@ -1167,48 +798,30 @@
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "CZ" = (
 /obj/machinery/light/small/red,
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Dg" = (
 /obj/structure/fence,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "DA" = (
 /obj/machinery/light/red{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "DP" = (
 /obj/structure/sigsystem/connector{
 	dir = 8
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "DU" = (
 /obj/effect/landmark/cratespawn,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "DV" = (
 /obj/machinery/conveyor/auto{
@@ -1216,18 +829,12 @@
 	resistance_flags = 64
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "DY" = (
 /obj/structure/sigsystem/deployer{
 	atom_path = /mob/living/simple_animal/hostile/ordeal/grungeon_spawner
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ei" = (
 /obj/machinery/button/door{
@@ -1235,9 +842,6 @@
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ew" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1246,9 +850,6 @@
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "EA" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1256,18 +857,12 @@
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "EO" = (
 /obj/effect/turf_decal/siding/green/corner{
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ER" = (
 /obj/effect/decal/cleanable/blood/footprints,
@@ -1275,9 +870,6 @@
 	dir = 4
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Fh" = (
 /obj/structure/railing{
@@ -1288,16 +880,10 @@
 	mobs_only = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Fm" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot/fast,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "FF" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -1308,18 +894,12 @@
 	},
 /mob/living/simple_animal/hostile/ordeal/green_bot,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "FX" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Gs" = (
 /obj/machinery/button/door{
@@ -1327,9 +907,6 @@
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Gu" = (
 /obj/structure/railing{
@@ -1337,18 +914,12 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "GE" = (
 /obj/machinery/light/red{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "GM" = (
 /obj/structure/railing{
@@ -1358,15 +929,9 @@
 	dir = 1
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "GV" = (
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Hg" = (
 /obj/machinery/light/small/red{
@@ -1376,15 +941,9 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Hi" = (
 /turf/open/floor/mineral/gold,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Hm" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -1395,9 +954,6 @@
 	},
 /obj/structure/sigsystem/activator,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Hs" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1406,43 +962,28 @@
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Hy" = (
 /obj/structure/sign/departments/mait/alt{
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "HA" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "HH" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "HK" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "HN" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -1452,16 +993,10 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ic" = (
 /obj/effect/landmark/cratespawn/corpo,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Id" = (
 /obj/machinery/conveyor/auto{
@@ -1469,44 +1004,29 @@
 	resistance_flags = 64
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Is" = (
 /obj/effect/turf_decal/siding/thinplating/light,
 /obj/machinery/light,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "It" = (
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "factoryentrance"
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "IF" = (
 /obj/structure/sigsystem/tower{
 	signal_code = 55
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Jq" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Jy" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -1517,16 +1037,10 @@
 	dir = 8
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ka" = (
 /obj/structure/sigsystem/connector,
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Kk" = (
 /obj/structure/railing{
@@ -1541,25 +1055,16 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Kl" = (
 /obj/machinery/light/red{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Kq" = (
 /obj/structure/flora/rock,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "KA" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -1570,32 +1075,20 @@
 	dir = 4
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "KG" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "KH" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "KU" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "La" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
@@ -1603,9 +1096,6 @@
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Lj" = (
 /obj/structure/sigsystem/connector/split{
@@ -1613,9 +1103,6 @@
 	happens_once = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ls" = (
 /obj/structure/railing{
@@ -1623,18 +1110,12 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "LQ" = (
 /obj/effect/turf_decal/siding/thinplating/light{
 	dir = 1
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Mx" = (
 /obj/machinery/conveyor/auto{
@@ -1642,18 +1123,12 @@
 	resistance_flags = 64
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "MA" = (
 /obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "MH" = (
 /obj/structure/sigsystem/tower{
@@ -1661,9 +1136,6 @@
 	signal_code = 44
 	},
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Nt" = (
 /obj/item/forginghammer,
@@ -1671,9 +1143,6 @@
 /obj/item/forginghammer,
 /obj/structure/rack,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Nw" = (
 /obj/structure/railing{
@@ -1683,18 +1152,12 @@
 	dir = 7
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Nx" = (
 /obj/machinery/light/small/red{
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "NG" = (
 /obj/structure/sigsystem/announcer{
@@ -1702,73 +1165,43 @@
 	message_range = 6
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "NS" = (
 /obj/structure/lootcrate/money,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ol" = (
 /obj/machinery/door/poddoor/shutters/indestructible,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Pb" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Pi" = (
 /obj/structure/closet/crate,
 /obj/item/tresmetal,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Pn" = (
 /turf/closed/indestructible/rock,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Pz" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "PZ" = (
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "foundryaccess"
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Qi" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/circuit/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Qt" = (
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Qw" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1776,23 +1209,14 @@
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Qy" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Rf" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot_big,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "RH" = (
 /obj/machinery/light/small/red{
@@ -1802,47 +1226,29 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "RK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "RU" = (
 /obj/structure/sigsystem/deployer{
 	atom_path = "/mob/living/simple_animal/hostile/ordeal/grungeon_spawner"
 	},
 /turf/open/floor/mineral/plastitanium/red,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Si" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Sq" = (
 /obj/structure/lootcrate/tres,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "SR" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ST" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -1852,9 +1258,6 @@
 	dir = 1
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "SZ" = (
 /obj/structure/sign/warning/fire{
@@ -1862,9 +1265,6 @@
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Tc" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -1872,9 +1272,6 @@
 	},
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Tj" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -1885,15 +1282,9 @@
 	},
 /obj/structure/sigsystem/activator,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Tm" = (
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TC" = (
 /obj/structure/railing{
@@ -1904,9 +1295,6 @@
 	signal_code = 55
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TG" = (
 /obj/structure/railing{
@@ -1916,16 +1304,10 @@
 	dir = 8
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TH" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TI" = (
 /obj/effect/decal/cleanable/blood/footprints,
@@ -1933,15 +1315,9 @@
 	id = "factoryentrance"
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TT" = (
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "TW" = (
 /obj/structure/sigsystem/pressure_plate{
@@ -1952,9 +1328,6 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ua" = (
 /obj/structure/railing{
@@ -1962,9 +1335,6 @@
 	},
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Uc" = (
 /obj/structure/railing/corner{
@@ -1972,9 +1342,6 @@
 	},
 /obj/structure/railing/corner,
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Uh" = (
 /obj/machinery/conveyor/auto{
@@ -1982,16 +1349,10 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Uw" = (
 /mob/living/simple_animal/hostile/ordeal/green_bot/syringe,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "UC" = (
 /obj/machinery/conveyor/auto{
@@ -1999,9 +1360,6 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "UD" = (
 /obj/machinery/door/poddoor{
@@ -2010,18 +1368,12 @@
 /obj/structure/sigsystem/connector,
 /obj/structure/sigsystem/activator,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "UH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/green/corner,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "UM" = (
 /obj/machinery/conveyor/auto{
@@ -2029,9 +1381,6 @@
 	resistance_flags = 64
 	},
 /turf/open/lava,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "US" = (
 /turf/open/space/basic,
@@ -2040,18 +1389,12 @@
 /obj/effect/decal/cleanable/blood/innards,
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Vf" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Vn" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2059,17 +1402,11 @@
 	dir = 1
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "VL" = (
 /obj/structure/fence,
 /obj/structure/fence,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "WH" = (
 /obj/structure/railing{
@@ -2081,88 +1418,55 @@
 	},
 /obj/effect/decal/cleanable/oil/slippery,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "WU" = (
 /obj/effect/turf_decal/siding/green{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Xg" = (
 /obj/item/bodypart/head,
 /turf/open/floor/plating/asteroid/basalt,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Xq" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/pod/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "XC" = (
 /obj/structure/sigsystem/connector{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "XW" = (
 /obj/structure/table/reinforced,
 /obj/structure/lootcrate/hana,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Ya" = (
 /obj/effect/turf_decal/siding/green/corner{
 	dir = 4
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Yc" = (
 /obj/structure/railing{
 	dir = 1
 	},
 /turf/open/chasm,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "YB" = (
 /obj/machinery/light,
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "YJ" = (
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "YL" = (
 /obj/structure/table/reinforced,
 /obj/structure/lootcrate/money,
 /turf/open/floor/facility/dark,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "YV" = (
 /obj/structure/lootcrate/tres,
@@ -2170,31 +1474,19 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Za" = (
 /obj/structure/sigsystem/connector,
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Zb" = (
 /obj/structure/sign/departments/cargo{
 	resistance_flags = 64
 	},
 /turf/closed/indestructible/syndicate,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Zj" = (
 /turf/open/floor/circuit,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "Zt" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -2202,9 +1494,6 @@
 	dir = 8
 	},
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ZD" = (
 /obj/structure/closet/crate,
@@ -2213,9 +1502,6 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ZQ" = (
 /obj/effect/turf_decal/siding/thinplating/light{
@@ -2226,17 +1512,11 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/facility,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 "ZV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/green/corner,
 /turf/open/floor/pod/light,
-/area/city/outskirts{
-	name = "Outskirts Factory"
-	},
 /area/city/outskirtsfactory)
 
 (1,1,1) = {"
