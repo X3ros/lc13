@@ -43,7 +43,7 @@
 /mob/living/simple_animal/hostile/ordeal/grungeon_boss/Move()
 	return FALSE
 
-/mob/living/simple_animal/hostile/ordeal/grungeon_boss/OpenFire(atom/A) //Copypasted code from TTLS snipers. Intended to serve as the "warning" for the minigun.
+/mob/living/simple_animal/hostile/ordeal/grungeon_boss/OpenFire(atom/A) //We able to burn them? No? Rev up the minigun.
 	if(!can_act)
 		return
 	if(napalm_blast())
@@ -52,14 +52,11 @@
 		return ..()
 	return FALSE
 
-/mob/living/simple_animal/hostile/ordeal/grungeon_boss/proc/PrepareToFire(atom/A)
+/mob/living/simple_animal/hostile/ordeal/grungeon_boss/proc/PrepareToFire(atom/A) //Copypasted code from TTLS snipers. Intended to serve as the "warning" for the minigun.
 	var/turf/my_turf = get_turf(src) //Slight alteration so there isn't any visual bugs. Many thanks to Eidos on the discord for helping me with this.
 	current_beam = my_turf.Beam(A, icon_state="blood", time = 2.2 SECONDS)
 	can_act = FALSE
-	SLEEP_CHECK_DEATH(22)
-	if(!(A in view(9, src)))
-		can_act = TRUE
-		return FALSE
+	SLEEP_CHECK_DEATH(2.6 SECONDS)
 	can_act = TRUE
 	return TRUE
 
@@ -154,7 +151,7 @@
 	update_icon()
 	if(length(spawned_mobs) >= 2)
 		return
-	if(spawn_progress < 20)
+	if(spawn_progress < 15)
 		spawn_progress += 1
 		return
 	Produce()
@@ -166,7 +163,7 @@
 	SLEEP_CHECK_DEATH(6)
 	visible_message(span_danger("\The [src] produces a new set of robots!"))
 	for(var/i = 1 to 1)
-		var/picked_mob = /mob/living/simple_animal/hostile/ordeal/green_bot/factory
+		var/picked_mob = /mob/living/simple_animal/hostile/ordeal/green_bot/fast/factory
 
 		var/mob/living/simple_animal/hostile/ordeal/nb = new picked_mob(get_turf(src))
 		spawned_mobs += nb

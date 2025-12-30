@@ -76,6 +76,13 @@
 	name = "bullet"
 	damage = 10
 
+/obj/projectile/ego_bullet/napalm
+	name = "napalm"
+	icon_state = "pulse0"
+	damage = 3
+	damage_type = FIRE
+	projectile_piercing = PASSMOB
+
 /obj/projectile/ego_bullet/napalm/Move()
 	..()
 	for(var/turf/open/T in range(1, src))

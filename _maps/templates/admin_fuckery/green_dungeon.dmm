@@ -413,12 +413,18 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/mechanical/old{
-	pixel_y = 9;
-	pixel_x = 4
-	},
 /obj/item/surgical_drapes{
-	pixel_x = -7
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/item/wirecutters{
+	pixel_y = 15;
+	pixel_x = -4
+	},
+/obj/item/scalpel,
+/obj/item/weldingtool{
+	pixel_x = 9;
+	pixel_y = 1
 	},
 /turf/open/floor/circuit,
 /area/city/outskirtsfactory)
@@ -1243,7 +1249,7 @@
 /turf/open/floor/pod/light,
 /area/city/outskirtsfactory)
 "Sq" = (
-/obj/structure/lootcrate/tres,
+/obj/structure/lootcrate/k_corp,
 /turf/open/floor/facility/dark,
 /area/city/outskirtsfactory)
 "SR" = (
@@ -1438,6 +1444,14 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
+/area/city/outskirtsfactory)
+"XU" = (
+/mob/living/simple_animal/hostile/mimic/crate{
+	icon = 'ModularLobotomy/_Lobotomyicons/refiner.dmi';
+	icon_living = "crate_hana";
+	icon_state = "crate_hana"
+	},
+/turf/open/floor/facility/dark,
 /area/city/outskirtsfactory)
 "XW" = (
 /obj/structure/table/reinforced,
@@ -3489,7 +3503,7 @@ io
 xE
 XW
 jf
-GV
+XU
 Sq
 xE
 fT
@@ -3592,7 +3606,7 @@ xE
 XW
 Hi
 Hi
-GV
+NS
 xE
 fT
 sJ
@@ -3897,7 +3911,7 @@ io
 xE
 YL
 NS
-GV
+Ic
 DU
 xE
 fT
