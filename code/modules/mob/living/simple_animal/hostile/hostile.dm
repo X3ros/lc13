@@ -253,8 +253,11 @@ GLOBAL_LIST_EMPTY(marked_players)
 			TryAttack()
 			if(QDELETED(src) || stat != CONSCIOUS)
 				return FALSE
-		if(!QDELETED(target) && !targets_from.Adjacent(target))
-			DestroyPathToTarget()
+		if(ranged)
+			TakeAim(target)
+		if(!QDELETED(target))
+			if(!targets_from.Adjacent(target))
+				DestroyPathToTarget()
 		if(!MoveToTarget(possible_targets))     //if we lose our target
 			if(AIShouldSleep(possible_targets))	// we try to acquire a new one
 				target_memory.Cut()
@@ -325,7 +328,7 @@ GLOBAL_LIST_EMPTY(marked_players)
 			if(!source_turf)
 				return
 			investigation_cooldown = world.time + investigation_cooldown_duration
-			patrol_to(source_turf)
+			INVOKE_ASYNC(src, TYPE_PROC_REF(/mob/living/simple_animal/hostile, patrol_to), source_turf) // This is an ASync because it calls AStar and that calls stoplag so if you ever have deal_damage in a signal it will throw a warning
 
 /mob/living/simple_animal/hostile/Move(atom/newloc, dir , step_x , step_y)
 	if(dodging && approaching_target && prob(dodge_prob) && moving_diagonally == 0 && isturf(loc) && isturf(newloc))
@@ -356,7 +359,7 @@ GLOBAL_LIST_EMPTY(marked_players)
 	. = ..()
 	if(!ckey && !stat && search_objects < 3 && . > 0)//Not unconscious, and we don't ignore mobs
 		if(search_objects)//Turn off item searching and ignore whatever item we were looking at, we're more concerned with fight or flight
-			target = null
+			LoseTarget(FALSE)
 			LoseSearchObjects()
 		if(AIStatus != AI_ON && AIStatus != AI_OFF)
 			toggle_ai(AI_ON)
@@ -415,37 +418,41 @@ GLOBAL_LIST_EMPTY(marked_players)
 				return null
 
 /mob/living/simple_animal/hostile/DamageEffect(damage, damtype)
-	var/obj/effect/dam_effect = null
+	var/effect_name
 	if(!damage)
-		dam_effect = new /obj/effect/temp_visual/healing/no_dam(get_turf(src))
-		if(damage_effect_scale != 1)
-			dam_effect.transform *= damage_effect_scale
-		return dam_effect
+		effect_name = "no_dam"
 	if(damage < 0)
-		dam_effect = new /obj/effect/temp_visual/healing(get_turf(src))
-		if(damage_effect_scale != 1)
-			dam_effect.transform *= damage_effect_scale
-		return dam_effect
-	switch(damtype)
-		if(RED_DAMAGE, BRUTE)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/red(get_turf(src))
-		if(WHITE_DAMAGE)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/white(get_turf(src))
-		if(BLACK_DAMAGE)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/black(get_turf(src))
-		if(PALE_DAMAGE)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/pale(get_turf(src))
-		if(FIRE)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/burn(get_turf(src))
-		if(TOX)
-			dam_effect = new /obj/effect/temp_visual/damage_effect/tox(get_turf(src))
-		else
+		effect_name = "healing"
+	if(!effect_name)
+		switch(damtype)
+			if(RED_DAMAGE, BRUTE)
+				effect_name = "dam_red"
+			if(WHITE_DAMAGE)
+				effect_name = "dam_white"
+			if(BLACK_DAMAGE)
+				effect_name = "dam_black"
+			if(PALE_DAMAGE)
+				effect_name = "dam_pale"
+			if(FIRE)
+				effect_name = "dam_burn"
+			if(TOX)
+				effect_name = "dam_tox"
+		if(!effect_name)
 			return null
+		else
+			effect_name += "[rand(1,2)]"
+	var/image/dam_effect = image('ModularLobotomy/_Lobotomyicons/lc13_coloreffect.dmi', get_turf(src), effect_name, src.layer + 0.1)
+	dam_effect.pixel_x = rand(-12, 12)
+	dam_effect.pixel_y = rand(-9, 0)
+	dam_effect.plane = GAME_PLANE
+	dam_effect.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
+
 	if(damage_effect_scale != 1)
 		dam_effect.transform *= damage_effect_scale
 	if(length(projectile_blockers) > 0)
 		dam_effect.pixel_x += rand(-occupied_tiles_left_current * 32, occupied_tiles_right_current * 32)
 		dam_effect.pixel_y += rand(-occupied_tiles_down_current * 32, occupied_tiles_up_current * 32)
+	flick_overlay(dam_effect, GLOB.clients, 8)
 	return dam_effect
 
 /mob/living/simple_animal/hostile/adjustBruteLoss(amount, updating_health, forced)
@@ -761,8 +768,11 @@ GLOBAL_LIST_EMPTY(marked_players)
 		. += fraction_hp_lost_to_thing * 25
 
 /mob/living/simple_animal/hostile/proc/GiveTarget(atom/new_target)
-	target_memory.Cut()
 	if(!QDELETED(new_target))
+		var/signal_return = SEND_SIGNAL(src, COMSIG_HOSTILE_GAINEDTARGET, new_target)
+		if(signal_return & COMPONENT_HOSTILE_REFUSE_AGGRO) // We can be told to cancel our re-targeting
+			return
+		target_memory.Cut()
 		target = new_target
 		target_memory[target] = 0
 		GainPatience()
@@ -772,11 +782,12 @@ GLOBAL_LIST_EMPTY(marked_players)
 	LoseTarget()
 	return FALSE
 
-/mob/living/simple_animal/hostile/proc/LoseTarget()
+/mob/living/simple_animal/hostile/proc/LoseTarget(stop_movement = TRUE)
 	target = null
 	approaching_target = FALSE
 	in_melee = FALSE
-	walk(src, 0)
+	if(stop_movement)
+		walk(src, 0)
 	SEND_SIGNAL(src, COMSIG_HOSTILE_LOSTTARGET)
 	LoseAggro()
 
@@ -899,12 +910,6 @@ GLOBAL_LIST_EMPTY(marked_players)
 			LoseTarget()
 			return FALSE
 		var/target_distance = get_dist(targets_from,target)
-		var/in_range = melee_reach > 1 ? target.Adjacent(targets_from) || (get_dist(src, target) <= melee_reach && (target in view(src, melee_reach))) : target.Adjacent(targets_from)
-		if(ranged) //We ranged? Shoot at em
-			if(!in_range && ranged_cooldown <= world.time)
-				//But make sure they're not in range for a melee attack and our range attack is off cooldown
-				OpenFire(target)
-
 		//This is consideration for chargers. If you are not a charger you can skip this.
 		if(charger && (target_distance > minimum_distance) && (target_distance <= charge_distance))
 			//Attempt to close the distance with a charge.
@@ -999,7 +1004,35 @@ GLOBAL_LIST_EMPTY(marked_players)
 		OpenFire(A)
 	return
 
+/mob/living/simple_animal/hostile/proc/TakeAim(atom/shootem)
+	if(!shootem)
+		return FALSE
+	/*
+	* ranged cooldown has to be a minimum of 1 second because the npcpool
+	* only procs once per 2 seconds and this cooldown cannot cause it to
+	* proc twice between 2 seconds.
+	*/
+	var/stupidly_complicated_cooldown_calc = world.time - ranged_cooldown
+	if(stupidly_complicated_cooldown_calc > -SSnpcpool.wait)
+		//Our cooldown is less than the next check.
+		if(stupidly_complicated_cooldown_calc < 0)
+			// Try to call this before our next check in 2 SECONDS
+			addtimer(CALLBACK(src, PROC_REF(OpenFire), shootem), clamp(abs(stupidly_complicated_cooldown_calc) + rand(-1,5), 1, 1.99 SECONDS), TIMER_STOPPABLE)
+		else
+			// Just shootem now.
+			OpenFire(shootem)
+		return TRUE
+
+//This is called by a callback sometimes so check to make sure we have not violently died.
 /mob/living/simple_animal/hostile/proc/OpenFire(atom/A)
+	if(QDELETED(src))
+		return
+	if(stat == DEAD)
+		return
+	var/in_range = melee_reach > 1 ? target.Adjacent(targets_from) || (get_dist(src, A) <= melee_reach && (target in view(src, melee_reach))) : target.Adjacent(targets_from)
+	if(in_range)
+		return
+
 	if(CheckFriendlyFire(A))
 		return
 	if(!(simple_mob_flags & SILENCE_RANGED_MESSAGE))

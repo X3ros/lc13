@@ -244,7 +244,7 @@
 	playsound(get_turf(src), 'sound/abnormalities/big_wolf/Wolf_FogChange.ogg', 75, 1)
 	ADD_TRAIT(src, TRAIT_MOVE_PHASING, "fleeing")
 	AIStatus = AI_OFF
-	target = null
+	LoseTarget(FALSE)
 	walk_to(src, 0)
 	TemporarySpeedChange(-2, 3 SECONDS)
 	fleeing_now = TRUE
@@ -342,15 +342,6 @@
 				for(var/mob/living/simple_animal/hostile/abnormality/red_hood/mercenary in hit_mob)
 					mercenary.deal_damage(100, RED_DAMAGE, src, attack_type = (ATTACK_TYPE_MELEE | ATTACK_TYPE_SPECIAL)) //triple damge to red
 	can_act = TRUE
-
-//Used in Steel noons for if they are allowed to fly through something.
-/mob/living/simple_animal/hostile/abnormality/big_wolf/ClearSky(turf/T)
-	. = ..()
-	if(.)
-		if(locate(/obj/structure/table) in T.contents)
-			return FALSE
-		if(locate(/obj/structure/railing) in T.contents)
-			return FALSE
 
 // Very simple ranged howl that applies white damage.
 /mob/living/simple_animal/hostile/abnormality/big_wolf/proc/Howl()

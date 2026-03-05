@@ -43,7 +43,7 @@
 	gift_type =  /datum/ego_gifts/acupuncture
 	abnormality_origin = ABNORMALITY_ORIGIN_ORIGINAL
 
-	generic_bubbles = list(
+	generic_bubbles = alist(
 		1 = list("%ABNO watches you from the corner of her eye."),
 		2 = list("%ABNO skips around the cell."),
 		3 = list("%ABNO is flicking the tip of her syringe to remove air bubbles."),
@@ -79,17 +79,15 @@
 		L.apply_lc_fragile(2)
 
 		//Also get a random between Blind, Confusion, Mute and drowsy, and none.
-		var/effect_choice = rand(1,5)
+		var/effect_choice = rand(1,4)
 		switch(effect_choice)
 			if(1)
 				L.set_confusion(10)
 			if(2)
 				L.silent = 100
 			if(3)
-				L.drowsyness += 30
-			if(4)
 				L.adjust_blindness(5)
-			if(5)
+			if(4)
 				return
 
 /mob/living/simple_animal/hostile/abnormality/lunar_rabbit/PostWorkEffect(mob/living/carbon/human/user, work_type, pe, work_time)

@@ -141,7 +141,7 @@
 
 	/// Bubbles and their speech
 	// Generic bubbles by agent level.
-	var/list/generic_bubbles = list(
+	var/list/generic_bubbles = alist(
 		1 = list("%PERSON looks nervously at %ABNO...", "%PERSON tries to stay focused."),
 		2 = list("%PERSON focuses on the task at hand.", "%PERSON follows the directions as trained."),
 		3 = list("%PERSON keeps an eye on %ABNO.", "%PERSON considers what they'll eat next."),
@@ -156,7 +156,7 @@
 		ABNORMALITY_WORK_REPRESSION = list("%PERSON holds what %ABNO desires, just out of reach..."),
 	)
 
-	// If TRUE, this Abnormality's odds of spawning go up dramatically. Enable for Abnormalities that are being reworked and need testing.
+	/// If TRUE, this Abnormality's odds of spawning go up dramatically. Enable for Abnormalities which are in need of testing, or have E.G.O. which is in need of testing.
 	var/being_tested = FALSE
 
 /mob/living/simple_animal/hostile/abnormality/Login()
@@ -202,9 +202,9 @@
 	if(secret_chance && (prob(1) || SSmaptype.chosen_trait == FACILITY_TRAIT_JOKE_ABNOS))
 		InitializeSecretIcon()
 
-	//Abnormalities have no name here. And we don't want nonsentient ones to breach
+	//regular abnormalities shouldn't spawn on the limbus map, but we'll give them a very different name from limbus abnos to avoid confusion.
 	if(SSmaptype.maptype == "limbus_labs")
-		name = "Limbus Company Specimen"
+		name = "Anomaly"
 		faction = list("neutral")
 
 /mob/living/simple_animal/hostile/abnormality/proc/InitializeSecretIcon()

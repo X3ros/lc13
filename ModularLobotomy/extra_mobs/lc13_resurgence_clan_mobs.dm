@@ -165,8 +165,6 @@
 			return
 		else
 			return
-	else
-		manual_emote("looks away, avoiding [M]'s gaze...")
 	return ..()
 
 /mob/living/simple_animal/hostile/clan/proc/Speech(speech)
@@ -585,7 +583,7 @@
 
 	if (potential_target && target && potential_target != target)
 		remove_beam()
-		target = potential_target
+		FindTarget(list(potential_target), TRUE)
 		if(ai_controller)
 			ai_controller.current_movement_target = target
 
@@ -716,6 +714,6 @@
 
 	if (potential_target && target && potential_target != target)
 		remove_beam()
-		target = potential_target
+		FindTarget(list(potential_target), TRUE)
 		if(ai_controller)
 			ai_controller.current_movement_target = target
