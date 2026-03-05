@@ -47,7 +47,6 @@ SUBSYSTEM_DEF(lobotomy_events)
 	. = ..()
 	RegisterSignal(SSdcs, COMSIG_GLOB_ABNORMALITY_BREACH, PROC_REF(OnAbnoBreach))
 	RegisterSignal(SSdcs, COMSIG_GLOB_CREWMEMBER_JOINED, PROC_REF(OnNewCrew))
-	ChangeSeasons()
 
 /datum/controller/subsystem/lobotomy_events/fire(resumed)
 	if(season_last_change < world.time)

@@ -1,6 +1,5 @@
 
 /obj/item/food/bread
-	name = "bread"
 	icon = 'icons/obj/food/burgerbread.dmi'
 	max_volume = 80
 	tastes = list("bread" = 10)
@@ -13,7 +12,6 @@
 	AddComponent(/datum/component/food_storage)
 
 /obj/item/food/breadslice
-	name = "bread slice"
 	icon = 'icons/obj/food/burgerbread.dmi'
 	slot_flags = ITEM_SLOT_HEAD
 	foodtypes = GRAIN

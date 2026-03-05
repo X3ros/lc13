@@ -119,7 +119,6 @@
 	attack_verb_simple = "bite"
 	attack_sound = 'sound/weapons/bite.ogg'
 	speak_emote = list("buzzes")
-	var/created_bee_type = /mob/living/simple_animal/hostile/worker_bee
 
 /mob/living/simple_animal/hostile/worker_bee/Initialize()
 	. = ..()
@@ -139,4 +138,4 @@
 		visible_message(span_danger("[src] bites hard on \the [H] as another bee appears!"))
 		H.emote("scream")
 		H.gib()
-		new created_bee_type(T)
+		new /mob/living/simple_animal/hostile/worker_bee(T)

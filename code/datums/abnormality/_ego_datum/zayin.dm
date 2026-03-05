@@ -2,12 +2,10 @@
 /datum/ego_datum/weapon/penitence
 	item_path = /obj/item/ego_weapon/support/penitence
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/penitence
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/penitence
 	cost = 12
-	ego_tags = list(EGO_TAG_REALIZABLE)
 
 /datum/ego_datum/armor/tough
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/tough
@@ -17,18 +15,15 @@
 /datum/ego_datum/weapon/soda
 	item_path = /obj/item/ego_weapon/ranged/pistol/soda
 	cost = 12
-	ego_tags = list(EGO_TAG_SUMMONER)
 
 /datum/ego_datum/armor/soda
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/soda
 	cost = 12
-	ego_tags = list(EGO_TAG_REALIZABLE)
 
 // Fairy Festival - Wingbeat
 /datum/ego_datum/weapon/wingbeat
 	item_path = /obj/item/ego_weapon/support/wingbeat
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/wingbeat
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/wingbeat
@@ -38,7 +33,6 @@
 /datum/ego_datum/weapon/little_alice
 	item_path = /obj/item/ego_weapon/support/little_alice
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/little_alice
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/little_alice
@@ -48,7 +42,6 @@
 /datum/ego_datum/weapon/change
 	item_path = /obj/item/ego_weapon/change
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/change
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/change
@@ -58,18 +51,15 @@
 /datum/ego_datum/weapon/doze
 	item_path = /obj/item/ego_weapon/support/doze
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT, EGO_TAG_HAZARDOUS)
 
 /datum/ego_datum/armor/doze
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/doze
 	cost = 12
-	ego_tags = list(EGO_TAG_REALIZABLE)
 
 // A Quiet Day - Nostalgia
 /datum/ego_datum/weapon/nostalgia
 	item_path = /obj/item/ego_weapon/ranged/pistol/nostalgia
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/nostalgia
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/nostalgia
@@ -79,7 +69,6 @@
 /datum/ego_datum/weapon/evening
 	item_path = /obj/item/ego_weapon/support/evening
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/evening
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/evening
@@ -89,7 +78,6 @@
 /datum/ego_datum/weapon/cavernous_wailing
 	item_path = /obj/item/ego_weapon/cavernous_wailing
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/cavernous_wailing
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/cavernous_wailing
@@ -99,7 +87,6 @@
 /datum/ego_datum/weapon/nightshade
 	item_path = /obj/item/ego_weapon/ranged/pistol/nightshade
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/nightshade
 	item_path = /obj/item/clothing/suit/armor/ego_gear/zayin/nightshade

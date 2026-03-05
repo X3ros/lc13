@@ -598,7 +598,7 @@
 	lefthand_file = 'icons/mob/inhands/96x96_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/96x96_righthand.dmi'
 	damtype = WHITE_DAMAGE
-	force = 29 // Significantly higher than Curfew due to hitting less times on a charge, being slower and having less reach.
+	force = 18
 	inhand_x_dimension = 96
 	inhand_y_dimension = 96
 	attack_speed = 2
@@ -711,7 +711,7 @@
 /obj/item/ego_weapon/luminosity
 	name = "luminosity"
 	desc = "A weapon that is hard to use even in the best of circumstances."
-	special = "This weapon has a combo system. To turn off this combo system, use in-hand. \
+	special = "This weapon has a combo system. To turn off this combo system, use in hand. \
 			This weapon has a fast attack speed. The combo finisher heals humans in a small area."
 	icon_state = "luminosity"
 	force = 12
@@ -824,15 +824,3 @@
 				human.adjustBruteLoss(-heal_brute)
 				human.apply_lc_protection(2)
 		cooldown = world.time + cooldown_duration
-
-/obj/item/ego_weapon/electricscreaming //someone with knowledge and free time please code in a big explosion move :)
-	name = "electric screaming"
-	desc = "A ball of fluff filled with electricity with a rod as it's handle, zap your foes with it!"
-	icon_state = "electric_screaming"
-	force = 36
-	attack_speed = 1.5
-	damtype = BLACK_DAMAGE
-	attack_verb_continuous = list("zaps", "electrocutes", "fries")
-	attack_verb_simple = list("zap", "electrocute", "fry")
-	hitsound = 'sound/abnormalities/alleywaywatchdog/telepole_1.ogg'
-

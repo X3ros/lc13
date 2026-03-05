@@ -505,9 +505,9 @@
 		toggle_ai(initial(src.AIStatus))
 		for(var/mob/living/carbon/human/H in view(src, 10)) // Immediately attacks on getting tagged
 			if(get_dist(src, H) < get_dist(src, target))
-				FindTarget(list(H), TRUE)
+				target = H
 			if(!target)
-				FindTarget(list(H), TRUE)
+				target = H
 		if(target in view(1, src))
 			AttackingTarget(target)
 		tagged = TRUE

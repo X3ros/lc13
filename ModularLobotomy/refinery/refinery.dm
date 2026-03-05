@@ -34,16 +34,6 @@
 		new /obj/item/rawpe(get_turf(src))
 	return ..()
 
-/obj/structure/refinery/examine(mob/user)
-	. = ..()
-	if(!loaded)
-		return
-	. += span_notice("It has [timeleft] seconds until refining is complete.")
-	if(blackjack > 0)
-		. += span_notice("The required filter strength is [blackjack].")
-	else if(blackjack == 0)
-		. += span_notice("The PE has been correctly filtered and refining is sped up.")
-
 /obj/structure/refinery/attackby(obj/item/I, mob/living/user, params)
 	if(istype(I, /obj/item/rawpe))
 		if(!loaded)
@@ -61,27 +51,27 @@
 			to_chat(user, span_notice("Something is already loaded."))
 
 
-	if(!loaded || !(istype(I, /obj/item/stack/refiner_filter))	)
+	if(!loaded || !(istype(I, /obj/item/refiner_filter))	)
 		return
 
 	if(!do_after(user, 12))
 		return
 
 	switch(I.type)
-		if(/obj/item/stack/refiner_filter/blue)
+		if(/obj/item/refiner_filter/blue)
 			blackjack -= 2
 
-		if(/obj/item/stack/refiner_filter/green)
+		if(/obj/item/refiner_filter/green)
 			blackjack -= 3
 
-		if(/obj/item/stack/refiner_filter/red)
+		if(/obj/item/refiner_filter/red)
 			blackjack -= 6
 
-		if(/obj/item/stack/refiner_filter/yellow)
+		if(/obj/item/refiner_filter/yellow)
 			blackjack -= 10
 
-	var/obj/item/stack/refiner_filter/filter = I
-	filter.use(1)
+
+	qdel(I)
 	to_chat(user, span_notice("You insert a filter."))
 	playsound(get_turf(src), 'sound/misc/box_deploy.ogg', 5, 0, 3)
 	if(blackjack < 0)

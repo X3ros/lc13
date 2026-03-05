@@ -44,8 +44,6 @@
 	var/list/stack_item_pricing = list(
 		/obj/item/stack/thumb_east_ammo = 100,
 		/obj/item/stack/thumb_east_ammo/spent = 40,
-		/obj/item/stack/thumb_east_ammo/quake = 135,
-		/obj/item/stack/thumb_east_ammo/inferno = 135,
 		/obj/item/stack/thumb_east_ammo/tigermark = 200,
 		/obj/item/stack/thumb_east_ammo/spent/tigermark = 100,
 		/obj/item/stack/thumb_east_ammo/tigermark/savage = 500,
@@ -325,23 +323,6 @@ GLOBAL_LIST_EMPTY(loaded_quest_z_levels)
 	var/map = "_maps/Quests/ruined_town.dmm"
 	var/map_name = "ruined_town_floor"
 	var/ticket_name = "Dilapidated Town"
-
-/obj/item/quest_ticket/grungeon
-	name = "'Outskirts Factory' ticket"
-	desc = "A small sheet of paper with a barcode. Could be given to a ticket reader to access to a new area."
-	icon = 'icons/obj/bureaucracy.dmi'
-	icon_state = "ticket"
-	inhand_icon_state = "ticket"
-	worn_icon_state = "ticket"
-	map = "_maps/Quests/green_dungeon.dmm"
-	map_name = "grungeon_floor"
-	ticket_name = "Outskirts Factory"
-
-/obj/item/quest_ticket/temple_motus
-	name = "'Temple of Motus' ticket"
-	map = "_maps/Quests/lost_adventures.dmm"
-	map_name = "temple_floor"
-	ticket_name = "Temple of Motus"
 
 /obj/machinery/computer/shuttle/quests_console
 

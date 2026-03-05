@@ -6,12 +6,10 @@
 /datum/ego_datum/weapon/bucket
 	item_path = /obj/item/ego_weapon/ranged/bucket
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/bucket
 	item_path = /obj/item/clothing/suit/armor/ego_gear/tools/bucket
 	cost = 12
-	ego_tags = list(EGO_TAG_REALIZABLE)
 
 // Don't touch me! - Prohibited
 /datum/ego_datum/weapon/prohibited
@@ -26,7 +24,6 @@
 /datum/ego_datum/weapon/plastic
 	item_path = /obj/item/ego_weapon/plastic
 	cost = 12
-	ego_tags = list(EGO_TAG_SUPPORT)
 
 /datum/ego_datum/armor/plastic
 	item_path = /obj/item/clothing/suit/armor/ego_gear/tools/plastic
@@ -45,7 +42,6 @@
 /datum/ego_datum/weapon/promise
 	item_path = /obj/item/ego_weapon/promise
 	cost = 12
-	ego_tags = list(EGO_TAG_BOOMERANG)
 
 /datum/ego_datum/armor/promise
 	item_path = /obj/item/clothing/suit/armor/ego_gear/tools/promise
@@ -63,7 +59,6 @@
 /datum/ego_datum/weapon/aspiration
 	item_path = /obj/item/ego_weapon/ranged/aspiration
 	cost = 20
-	ego_tags = list(EGO_TAG_HAZARDOUS, EGO_TAG_SUPPORT)
 
 // Behavior Adjustment - Adjustment
 /datum/ego_datum/weapon/adjustment
@@ -82,7 +77,6 @@
 /datum/ego_datum/weapon/philia
 	item_path = /obj/item/ego_weapon/philia
 	cost = 20
-	ego_tags = list(EGO_TAG_SUSTAIN, EGO_TAG_SUPPORT)
 
 // Luminous Bracelet
 /datum/ego_datum/armor/luminosity
@@ -92,7 +86,6 @@
 /datum/ego_datum/weapon/luminosity
 	item_path = /obj/item/ego_weapon/luminosity
 	cost = 20
-	ego_tags = list(EGO_TAG_COMBO, EGO_TAG_SUSTAIN, EGO_TAG_SUPPORT)
 
 // TODO: Skin Prophecy - Just uses skin prophet ego for now
 
@@ -126,7 +119,6 @@
 /datum/ego_datum/weapon/divinity
 	item_path = /obj/item/ego_weapon/divinity
 	cost = 35
-	ego_tags = list(EGO_TAG_AOE_RADIAL)
 
 // Third Fate's Loom - Destiny
 /datum/ego_datum/armor/destiny
@@ -141,7 +133,6 @@
 /datum/ego_datum/weapon/giant_tree_branch
 	item_path = /obj/item/ego_weapon/giant_tree_branch
 	cost = 35
-	ego_tags = list(EGO_TAG_SUSTAIN)
 
 /datum/ego_datum/armor/giant_tree_branch
 	item_path = /obj/item/clothing/suit/armor/ego_gear/tools/giant_tree_branch
@@ -168,7 +159,6 @@
 /datum/ego_datum/weapon/hyde
 	item_path = /obj/item/ego_weapon/hyde
 	cost = 50
-	ego_tags = list(EGO_TAG_HAZARDOUS, EGO_TAG_VERSATILE_DAMAGE)
 
 // Backwards Clock - Wind-up
 /datum/ego_datum/weapon/windup

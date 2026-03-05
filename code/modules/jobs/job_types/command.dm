@@ -60,7 +60,6 @@
 	name = "Extraction Officer"
 	jobtype = /datum/job/command
 	suit =  /obj/item/clothing/suit/armor/extraction
-	ears = /obj/item/radio/headset/heads/extraction
 
 	backpack_contents = list(
 		/obj/item/price_tagger,
@@ -95,7 +94,6 @@
 	name = "Records Officer"
 	jobtype = /datum/job/command/records
 	suit =  /obj/item/clothing/suit/armor/records
-	ears = /obj/item/radio/headset/heads/records
 
 	backpack_contents = list(
 		/obj/item/portacopier,

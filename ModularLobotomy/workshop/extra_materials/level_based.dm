@@ -7,7 +7,6 @@
 	quality = 1
 	color = COLOR_GREEN
 	heated_type = /obj/item/hot_tresmetal/copper
-	mat_density = 25
 
 /obj/item/hot_tresmetal/copper
 	matname = "copper"
@@ -25,7 +24,6 @@
 	quality = 1
 	color = COLOR_YELLOW
 	heated_type = /obj/item/hot_tresmetal/goldsteel
-	mat_density = 40
 
 /obj/item/hot_tresmetal/goldsteel
 	matname = "goldsteel"
@@ -43,7 +41,6 @@
 	quality = 1
 	color = COLOR_SILVER
 	heated_type = /obj/item/hot_tresmetal/silversteel
-	mat_density = 60
 
 /obj/item/hot_tresmetal/silversteel
 	matname = "silversteel"
@@ -59,7 +56,6 @@
 	quality = 1
 	color = COLOR_VERY_SOFT_YELLOW
 	heated_type = /obj/item/hot_tresmetal/electrum
-	mat_density = 80
 
 /obj/item/hot_tresmetal/electrum
 	matname = "electrum"

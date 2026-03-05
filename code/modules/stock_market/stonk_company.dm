@@ -1,32 +1,36 @@
 /*
-* Ramshackle Stonk Code.
+* This is a butchered ramshackle version
+* of TG stocks code.
 */
 
 /datum/stonk_company
-	//If no name is defined then it wont appear.
 	var/name
-	var/desc = "THIS IS NOT A COMPANY ALERT YOUR ADMIN"
-	var/product = "RUNTIMES"
+	var/desc = "An upstart company formed from a group of \"reformed\" rats from the backstreets."
+	var/product = "Scrap & Guts"
 	var/current_value = 100
 	var/last_value = 100
-	// A base value that is turned into change using market value
-	var/base_value  = 100
-	// A base for the muliplier which is multiplied by preformance and optimism
-	var/market_value = 0.10
-	/*
-	* The current performance of the company.
-	* Rises and falls by the whims of imaginary employees.
-	*/
+
+	// The current performance of the company. Tends itself to 0 when no events happen.
 	var/performance = 0
-	var/min_performance = -10
-	//If this is true all stocks are dumped and the company resets.
+
+	/*
+	* These variables determine standard fluctuational patterns for this stock.
+	* How much the price fluctuates on an average daily basis
+	* NOTE: I set this to 3 and the stock went to 20000+
+	*/
+	var/fluctuational_coefficient = 1
+	// The history of shareholder optimism of this stock
+	var/average_optimism = 0
+	// Used in Fluctuate()
+	var/current_trend = 0
+	var/last_trend = 0
+	var/speculation = 0
 	var/bankrupt = 0
-	//  The maximum amount of value a stock can have before being investigated.
-	var/maxstock = 10000
+	//A value to prevent exponential growth, decay.
+	var/value_decay = 0
 	//ISSUE: This will become false if anyone checks the news.
 	var/news_notif = FALSE
 
-	//Used for visuals
 	var/disp_value_change = 0
 	/*
 	* Optimism is a value effected by random events.
@@ -45,19 +49,20 @@
 	var/list/values = list()
 	var/list/shareholders = list()
 
+
 /datum/stonk_company/New(company_name, company_product, company_value, company_desc)
-	if(company_name)
-		name = company_name
+	name = company_name
 	if(company_product)
 		product = company_product
 	if(company_value)
 		current_value = company_value
 		values = list(company_value)
 	else
-		//Gimme a value that is 35% to 200% of default value.
+		//Gimme a value that is 10% to 100% of default value.
 		current_value = current_value * (rand(35,200) / 100)
 	if(company_desc)
 		desc = company_desc
+
 
 	/*----------\
 	|UI ELEMENTS|
@@ -71,7 +76,10 @@
 		. += "Shares:[investor.ReturnStonkValue(src)]|"
 	if(debug_mode)
 		. += "<br>optimism:[optimism]|<br>\
-			performance:[performance]"
+			current_trend:[current_trend]|last_trend:[last_trend]|<br>\
+			fluctuational_coefficient:[fluctuational_coefficient]|<br>\
+			fluctuation_rate:[fluctuation_rate]|fluctuation_counter:[fluctuation_counter]<br>\
+			speculation:[speculation]|performance:[performance]"
 	else
 		. += "<br>\
 			Optimism:[NameOptimism(optimism)]|"
@@ -108,9 +116,9 @@
 			return "BAD"
 		if(0)
 			return "NORMAL"
-		if(1 to 4)
+		if(1 to 2)
 			return "GOOD"
-		if(5 to INFINITY)
+		if(3 to INFINITY)
 			return "GREAT"
 
 	/*-------------------\
@@ -118,7 +126,7 @@
 	\-------------------*/
 
 /datum/stonk_company/proc/CalculateMinutes(datum/stonk_investor/I)
-	fluctuation_counter += rand(5,fluctuation_rate)
+	fluctuation_counter += rand(5,10)
 	if (fluctuation_counter >= fluctuation_rate)
 		GenerateNews(I, rand(1,6))
 		fluctuation_counter = 0
@@ -134,7 +142,7 @@
 		bankrupt = FALSE
 		GenerateNewsText(I, 3, "[name] has been bailed out of bankruptsy.")
 		return
-	if((!bankrupt && optimism < 0 && prob(abs(optimism) * 3)) || current_value < 10)
+	if((!bankrupt && optimism < 0 && prob(abs(optimism))) || current_value < 1)
 		Bankrupt()
 		GenerateNewsText(I, 3, "[name] has filed for bankruptsy.")
 		return
@@ -182,11 +190,11 @@
 				[pick(bad_news)], <br>\
 				investors are losing faith in the companies survival.")
 		if(2 to 3)
-			GenerateNewsText(I, rand(-1, 1),"\
+			GenerateNewsText(I, rand(-2, 3),"\
 				[pick(neutral_news)], <br>\
 				investors are yet to see the effect this has on profits.")
 		if(4)
-			GenerateNewsText(I, rand(1, 3),"\
+			GenerateNewsText(I, rand(1, 2),"\
 				[pick(good_news)], <br>\
 				company stocks are sure to increase now.")
 		else
@@ -209,6 +217,7 @@
 /datum/stonk_company/proc/Bankrupt()
 	bankrupt = TRUE
 	optimism = 0
+	average_optimism = 0
 	performance = 0
 	current_value = 35
 	average_shares = 100
@@ -221,7 +230,7 @@
 	\----------------*/
 // Unsure how most of this code works.
 /datum/stonk_company/proc/modifyAccount(datum/stonk_investor/stonker, by, force=0)
-	if(stonker.budget)
+	if (stonker.budget)
 		if (by < 0 && stonker.budget + by < 0 && !force)
 			return 0
 		stonker.budget += by
@@ -233,11 +242,11 @@
 		return
 	howmany = round(howmany)
 	var/loss = howmany * current_value
-	if(available_shares < howmany)
+	if (available_shares < howmany)
 		return 0
-	if(modifyAccount(stonker, -loss))
+	if (modifyAccount(stonker, -loss))
 		supplyDrop(howmany)
-		if(!(stonker in shareholders))
+		if (!(stonker in shareholders))
 			shareholders[stonker] = howmany
 		else
 			shareholders[stonker] += howmany
@@ -245,13 +254,13 @@
 	return 0
 
 /datum/stonk_company/proc/sellShares(datum/stonk_investor/stonker, howmany)
-	if (howmany < 0 || bankrupt)
+	if (howmany < 0)
 		return
 	howmany = round(howmany)
 	var/gain = howmany * current_value
-	if(shareholders[stonker] < howmany)
+	if (shareholders[stonker] < howmany)
 		return 0
-	if(modifyAccount(stonker, gain))
+	if (modifyAccount(stonker, gain))
 		supplyGrowth(howmany)
 		shareholders[stonker] -= howmany
 		if (shareholders[stonker] <= 0)
@@ -259,46 +268,27 @@
 		return 1
 	return 0
 
-//Calculations for outsider trading
-/datum/stonk_company/proc/outsiderTrading()
-	var/buy = FALSE
-	var/active = FALSE
-	var/share_change
-	var/value_difference = abs(current_value - last_value / 100)
-
-	if(available_shares > 100)
-		var/buy_chance = 0
-		if(last_value < current_value)
-			buy_chance += value_difference
-		if(optimism > 4)
-			buy_chance += 2
-		if(prob(buy_chance))
-			active = TRUE
-			buy = TRUE
-
-	if(outside_shareholders > 0)
-		var/sell_chance = 0
-		if(last_value > current_value)
-			sell_chance += value_difference
-		if(optimism < 3)
-			sell_chance += 2
-		if(prob(sell_chance))
-			active = TRUE
-			buy = FALSE
-
-	if(active)
-		if(buy)
-			share_change = clamp(rand(-10,0),-available_shares,0)
-		else
-			share_change = clamp(rand(0,10),0,outside_shareholders)
-		outside_shareholders -= share_change
-		available_shares += share_change
-		supplyGrowth(share_change)
+	/*
+	* Used in supplyGrowth()
+	*/
+/datum/stonk_company/proc/frc(amt)
+	var/shares = available_shares + outside_shareholders * average_shares
+	var/fr = amt / 100
+	if(shares)
+		fr = fr / shares * fluctuational_coefficient * fluctuation_rate * max(-(current_trend / 100), 1)
+	if ((fr < 0 && speculation < 0) || (fr > 0 && speculation > 0))
+		fr *= max(abs(speculation) / 5, 1)
+	else
+		fr /= max(abs(speculation) / 5, 1)
+	return fr
 
 	//Called by events to randomly effect trends.
 /datum/stonk_company/proc/affectPublicOpinion(boost)
-	optimism = clamp(optimism + boost,-20, 20)
-	performance = clamp(performance + rand(-1,1),min_performance, 10)
+	if(optimism < 3)
+		optimism += rand(0, 500) / 500 * boost
+		average_optimism += rand(0, 150) / 5000 * boost
+	speculation += rand(-1, 50) / 10 * boost
+	performance += rand(0, 150) / 100 * boost
 
 	/*
 	* Used in sellShares()
@@ -306,46 +296,127 @@
 	* Negative value change is up, positive is down.
 	*/
 /datum/stonk_company/proc/supplyGrowth(amt)
-	available_shares = round(max(0, available_shares + amt))
+	var/fr = frc(amt)
+	available_shares += amt
+	if (abs(fr) < 0.0001)
+		return
+	//Growth cannot exceed 150 units
+	var/value_change = clamp(fr * current_value, -150, 150)
+	//Refresh value decay if below -10
+	//sort of a soft cap. Canonically we send agents to sabotage the company.
+	if((value_change < -75 || current_value > 600))
+		if(value_decay != 0)
+			value_decay -= 0.25
+	else
+		value_decay = 1
+	/*
+	* This is sloppy but if the value change
+	* is negative do not decay it but also preserve
+	* the value decay for when there is positive growth
+	* to prevent spikes from sneaking by.
+	*/
+	var/final_value_decay = value_decay
+	if(value_change > 0)
+		final_value_decay = 1
+	current_value -= value_change * final_value_decay
 
 	//Used in buyShares and Fluctuate
 /datum/stonk_company/proc/supplyDrop(amt)
 	supplyGrowth(-amt)
 
-	//This changes stock value over time. Returns change in value
+	//This changes stock value over time. Lots of MATH.
 /datum/stonk_company/proc/fluctuate()
-	. = 0
-	outsiderTrading()
-	//Attempts to regulate the market.
-	if(current_value >= 700)
-		//Attempts to make stocks above  700 more reliant on optimism
-		performance = clamp(performance + -2,-6, 2)
-	//Calculate if we are working hard or hardly workig
-	var/opti_perf = optimism + performance
-	if(opti_perf == 0)
-		opti_perf = pick(-2,-1,1)
-	// Minimum market modifier is -100% and 100%. Market value is usually around 0.01.
-	var/market_modifier = clamp(-1, 1,(market_value*opti_perf) - (rand(0,5)*0.01))
-	// The stocks grow by base value altered by market modifier
-	. = base_value * market_modifier
-	last_value = current_value
-	current_value += .
-	//Failsafe for negative value stocks
-	if(current_value < 5)
-		current_value = 5
-		performance = 4
+	//Optimism is added to change
+	var/change = rand(-100, 100) / 10 + optimism * rand(200) / 10
+	//Optimism is then reduced by its difference from average times and random percent.
+	optimism -= (optimism - average_optimism) * (rand(10,80) / 1000)
+	var/shift_score = change + current_trend
+	var/as_score = abs(shift_score)
+	var/sh_change_dev = rand(-10, 10) / 10
+	//shareholder change is effected by change minus current trend?
+	var/sh_change = shift_score / (as_score + 100) + sh_change_dev
+	//How much of the stock has been bought by outside shareholders
+	var/shareholder_change = round(sh_change)
+	outside_shareholders += shareholder_change
+	var/share_change = shareholder_change * average_shares
+	if (as_score > 20 && prob(as_score / 4))
+		var/avg_change_dev = rand(-10, 10) / 10
+		var/avg_change = shift_score / (as_score + 100) + avg_change_dev
+		average_shares += avg_change
+		share_change += outside_shareholders * avg_change
 
+	var/cv = last_value
+	supplyDrop(share_change)
+	available_shares += share_change // temporary
+
+	if (prob(25))
+		average_optimism = max(min(average_optimism + (rand(-3, 3) - current_trend * 0.15) / 100, 1), -1)
+
+	var/aspec = abs(speculation)
+	if (prob((aspec - 75) * 2))
+		speculation += rand(-4, 4)
+	else
+		if (prob(50))
+			speculation += rand(-4, 4)
+		else
+			speculation += rand(-400, 0) / 1000 * speculation
+			if (prob(1) && prob(5)) // pop that bubble
+				speculation += rand(-4000, 0) / 1000 * speculation
+
+	//Failsafe for negative value stocks
+	if (current_value < 5)
+		current_value = 5
+
+	if (performance != 0)
+		performance = rand(900,1050) / 1000 * performance
+		if (abs(performance) < 0.2)
+			performance = 0
+
+	disp_value_change = (cv < current_value) ? 1 : ((cv > current_value) ? -1 : 0)
+	last_value = current_value
 	//TOO MANY VALUES THROW THE OLDEST OUT
 	if (length(values) >= 50)
 		values.Cut(1,2)
 	values += current_value
 
-	if(current_value >= maxstock)
-		Bankrupt()
-		GenerateNewsText(txt = "-The stock value of [name] has alerted district administration.-")
-		return
-	disp_value_change = current_value - last_value
-	return
+	//If current value less than 25 unify the shares and double the value.
+	if (current_value < 25)
+		unifyShares()
+
+	last_trend = current_trend
+	/*
+	* What even is this equation...
+	* 2.50 random plus optimism
+	* times 0 to 200 divided by 10
+	* plus a max of 50 minus the absolute value of speculation
+	* divided by 50 times a value between 0 to 200
+	* then divide that by 1000 times
+	* inverted current_trend + speclation minus 50
+	* times a value from 0 to 200 divided by 1000
+	* times speculation divided by 400. What even.
+	*/
+	current_trend += rand(-200, 200) / 100 + optimism * rand(200) / 10 + max(50 - abs(speculation), 0) / 50 * rand(0, 200) / 1000 * (-current_trend) + max(speculation - 50, 0) * rand(0, 200) / 1000 * speculation / 400
+	//If the stock gains more than 20% of its current value in one move we cripple the company.
+	if(current_value > last_value * 2)
+		current_value = 100
+		GenerateNewsText(txt = "The drastic increase in stock value has alerted district administration.")
+	return "[change]|[shift_score]|[as_score]|[sh_change_dev]|[sh_change]|[shareholder_change]"
+
+	//Used in fluctuate()
+/datum/stonk_company/proc/unifyShares()
+	for (var/I in shareholders)
+		var/shr = shareholders[I]
+		if (shr % 2)
+			sellShares(I, 1)
+		shr -= 1
+		shareholders[I] = round(shareholders[I] / 2)
+		if (!shareholders[I])
+			shareholders -= I
+	//Do not divide and double shares that are a fraction of a share.
+	if(round(available_shares) >= 2)
+		average_shares = round(average_shares / 2)
+		available_shares = round(available_shares / 2)
+		current_value *= 2
 
 	//Visual UI for a bar graph based on the values of a list.
 /datum/stonk_company/proc/plotBarGraph(list/points, base_text, width=400, height=400)
