@@ -1,9 +1,9 @@
 {
 	"version": 1,
 	"map_name": "Facility T-053 TUBES",
-	"map_path": "map_files/LC13/Tango-Tubes",
+	"map_path": "map_files/LC13/Golf-Tubes",
 	"map_file": [
-		"tango.dmm"
+		"golf.dmm"
 	],
 	"traits": [
 		{
